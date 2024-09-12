@@ -28,9 +28,8 @@ body {
 }
 
 .svg-button {
-     width: 100px; /* Fixed width for the button */
-    height: 100px; /* Fixed height for the button */
-
+    width: 10vw; /* Ширина в 20% від ширини вікна оглядача */
+    height: auto;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -40,7 +39,10 @@ body {
     align-items: center;
     aspect-ratio: 1/1; /* Ставимо аспект-ратио, щоб зберегти пропорції 1:1 */
 }
-
+.svg-button img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
 /* Ensure SVG scales properly */
 .svg-button svg {
     width: 100%;
