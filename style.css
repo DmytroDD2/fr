@@ -59,8 +59,8 @@ body {
 @media (max-width: 600px) {
     .svg-button {
         width: 900vw; /* Adjust width for smaller screens */
-        max-width: 1000px; /* Adjust maximum width */
-        aspect-ratio: 2 / 1; /* Maintain aspect ratio */
+        max-width: 1500px; /* Adjust maximum width */
+        aspect-ratio: 6 / 4; /* Maintain aspect ratio */
     }
 }
 
