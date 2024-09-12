@@ -66,13 +66,13 @@ body {
 
 
 /* Media query for screens up to 400px wide */
-@media (max-width: 100px) {
+@media (max-width: 150px) {
     .svg-button {
         width: 800vw; /* Adjust width for very small screens */
         max-width: 1150px; /* Adjust maximum width */
-        aspect-ratio: 2 / 1; /* Maintain aspect ratio */
+        aspect-ratio: 1 / 1; /* Maintain aspect ratio */
     }
 }
-
+ 
 
 
