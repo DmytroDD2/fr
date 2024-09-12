@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Забезпечує, що фон покриває всю висоту екрана */
+    min-height: 80vh; /* Забезпечує, що фон покриває всю висоту екрана */
     margin: 0; /* Вимкнення відступів */
 }
 
@@ -11,7 +11,13 @@ body {
 
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центр по вертикалі */
+    align-items: center; /* Центр по горизонталі */
+    min-height: 100vh; /* Контейнер займає щонайменше всю висоту екрану */
     text-align: center;
+    padding: 20px; /* Додаємо трохи відступів для краси */
 }
 
 .animation-container img {
@@ -22,7 +28,7 @@ body {
 }
 
 .svg-button {
-    width: 60vw; /* Ширина в 20% від ширини вікна оглядача */
+    width: 40vw; /* Ширина в 20% від ширини вікна оглядача */
     background-color: transparent;
     border: none;
     cursor: pointer;
