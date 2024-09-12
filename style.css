@@ -21,14 +21,14 @@ body {
 }
 
 .animation-container img {
-    width: 80%; /* Використовуємо відсотки для адаптивності */
+    width: 20%; /* Використовуємо відсотки для адаптивності */
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .svg-button {
-    width: 80vw; /* Ширина в 20% від ширини вікна оглядача */
+    width: 20vw; /* Ширина в 20% від ширини вікна оглядача */
     background-color: transparent;
     border: none;
     cursor: pointer;
