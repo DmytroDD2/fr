@@ -66,7 +66,7 @@ body {
 
 
 /* Media query for screens up to 400px wide */
-@media (max-width: 400px) {
+@media (max-width: 100px) {
     .svg-button {
         width: 800vw; /* Adjust width for very small screens */
         max-width: 1150px; /* Adjust maximum width */
