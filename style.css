@@ -55,15 +55,15 @@ body {
 /* Media query for smaller screens or platforms like Telegram */
 @media (max-width: 600px) {
     .svg-button {
-        width: 30vw; /* Adjust width for smaller screens */
-        max-width: 80px; /* Adjust maximum width */
+        width: 40vw; /* Adjust width for smaller screens */
+        max-width: 120px; /* Adjust maximum width */
     }
 }
 
 @media (max-width: 400px) {
     .svg-button {
-        width: 40vw; /* Adjust width for very small screens */
-        max-width: 60px; /* Adjust maximum width */
+        width: 50vw; /* Adjust width for very small screens */
+        max-width: 100px; /* Adjust maximum width */
     }
 }
 
