@@ -64,7 +64,6 @@ body {
     }
 }
 
-
 /* Media query for screens up to 400px wide */
 @media (max-width: 150px) {
     .svg-button {
