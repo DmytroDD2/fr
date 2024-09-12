@@ -58,7 +58,7 @@ body {
 /* Media query for screens up to 600px wide */
 @media (max-width: 600px) {
     .svg-button {
-        width: 90vw; /* Adjust width for smaller screens */
+        width: 900vw; /* Adjust width for smaller screens */
         max-width: 1000px; /* Adjust maximum width */
         aspect-ratio: 2 / 1; /* Maintain aspect ratio */
     }
@@ -67,7 +67,7 @@ body {
 /* Media query for screens up to 400px wide */
 @media (max-width: 400px) {
     .svg-button {
-        width: 80vw; /* Adjust width for very small screens */
+        width: 800vw; /* Adjust width for very small screens */
         max-width: 500px; /* Adjust maximum width */
         aspect-ratio: 1 / 1; /* Maintain aspect ratio */
     }
