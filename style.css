@@ -28,7 +28,7 @@ body {
 }
 
 .svg-button {
-    width: 40vw; /* Ширина в 20% від ширини вікна оглядача */
+    width: 80vw; /* Ширина в 20% від ширини вікна оглядача */
     background-color: transparent;
     border: none;
     cursor: pointer;
