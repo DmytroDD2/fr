@@ -28,7 +28,7 @@ body {
 }
 
 .svg-button {
-    width: 40vw; /* Ширина в 20% від ширини вікна оглядача */
+    width: 80vw; /* Ширина в 20% від ширини вікна оглядача */
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -52,18 +52,24 @@ body {
     height: 100%; /* Make SVG fill the button and maintain proportions */
 }
 
-/* Media query for smaller screens or platforms like Telegram */
+
+
+
+/* Media query for screens up to 600px wide */
 @media (max-width: 600px) {
     .svg-button {
-        width: 40vw; /* Adjust width for smaller screens */
-        max-width: 120px; /* Adjust maximum width */
+        width: 90vw; /* Adjust width for smaller screens */
+        max-width: 1000px; /* Adjust maximum width */
+        aspect-ratio: 2 / 1; /* Maintain aspect ratio */
     }
 }
 
+/* Media query for screens up to 400px wide */
 @media (max-width: 400px) {
     .svg-button {
-        width: 50vw; /* Adjust width for very small screens */
-        max-width: 100px; /* Adjust maximum width */
+        width: 80vw; /* Adjust width for very small screens */
+        max-width: 500px; /* Adjust maximum width */
+        aspect-ratio: 1 / 1; /* Maintain aspect ratio */
     }
 }
 
