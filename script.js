@@ -1,15 +1,19 @@
 // script.js
-document.getElementById('refresh-status').addEventListener('click', function() {
-    // Simulate fetching user status
-    document.getElementById('user-status').innerText = 'Active'; // Example status
-});
 
-document.getElementById('payment-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const amount = document.getElementById('amount').value;
-    const image = document.getElementById('image').files[0];
 
-    // Example: Handling payment submission (this would be where you integrate with the Telegram bot)
-    alert(`Payment of ${amount} MemeFi Coins submitted!`);
-    // Here you would upload the image and send the payment info to your bot/server
+
+const navItems = document.querySelectorAll('.nav-item');
+
+// Функція для встановлення активної кнопки
+function setActiveButton(event) {
+    // Спочатку прибираємо клас "active" з усіх кнопок
+    navItems.forEach(item => item.classList.remove('active'));
+    
+    // Додаємо клас "active" до натиснутої кнопки
+    event.currentTarget.classList.add('active');
+}
+
+// Додаємо обробник подій до кожної кнопки
+navItems.forEach(item => {
+    item.addEventListener('click', setActiveButton);
 });
