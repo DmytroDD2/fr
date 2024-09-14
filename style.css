@@ -128,20 +128,42 @@ body {
 
 
 
-/* Media query for screens up to 600px wide */
-@media (max-width: 600px) {
-    .svg-button {
-        width: 900vw; /* Adjust width for smaller screens */
-        max-width: 1500px; /* Adjust maximum width */
-        aspect-ratio: 6 / 4; /* Maintain aspect ratio */
+@media (max-width: 768px) {
+    .navigation {
+        width: 90%; /* Панель займає майже всю ширину */
+        bottom: 5px; /* Невеликий відступ від низу */
+        left: 5%; /* Відступи зліва і справа */
+        right: 5%;
+    }
+    
+    .nav-item {
+        width: 50px; /* Зменшений розмір кнопок для мобільних */
+        height: 50px;
+    }
+
+    .nav-item object[type="image/svg+xml"] {
+        width: 18px; /* Менший розмір іконок для мобільних */
+        height: 18px;
     }
 }
 
-/* Media query for screens up to 400px wide */
-@media (max-width: 150px) {
-    .svg-button {
-        width: 800vw; /* Adjust width for very small screens */
-        max-width: 1150px; /* Adjust maximum width */
-        aspect-ratio: 1 / 1; /* Maintain aspect ratio */
+/* Дуже маленькі екрани (наприклад, телефони) */
+@media (max-width: 480px) {
+    .navigation {
+        width: 100%; /* Панель займає всю ширину */
+        padding: 0.5rem; /* Менший відступ */
+        bottom: 0; /* Розташування прямо біля нижнього краю */
+        left: 0;
+        right: 0;
+    }
+
+    .nav-item {
+        width: 50px;
+        height: 40px;
+    }
+
+    .nav-item object[type="image/svg+xml"] {
+        width: 16px;
+        height: 16px;
     }
 }
