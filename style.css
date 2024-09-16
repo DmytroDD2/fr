@@ -24,18 +24,18 @@ body {
 .navigation {
     border-radius: 50%;
     position: fixed;
-    bottom: 3.2mm;
+    bottom: 3.5mm;
     left: 0;
     right: 0;
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
     margin: 0 auto; /* Центрування навігації */
-    height: 50px; /* Збільшена висота для зручності */
+    height: 55px; /* Збільшена висота для зручності */
     padding: .5rem; /* Менші відступи всередині для економії простору */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px; /* Округлені кути */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    
     
 }
 
@@ -69,7 +69,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Можна додати тінь */
 }
 
+.nav-item:first-child {
+    border-radius: 0 5px 5px 0;
+}
 
+/* Закруглюємо правий верхній і правий нижній краї для останньої кнопки */
+.nav-item:last-child {
+    border-radius: 0 5px 5px 0;
+}
 
 @media (max-width: 600px) {
     .navigation {
@@ -78,7 +85,7 @@ body {
     }
     
     .nav-item {
-        width: 51mm;
+        width: 49mm;
         height: 8mm;
     }
 }
