@@ -23,13 +23,13 @@ body {
 
 .navigation {
     position: fixed;
-    bottom: 1%;
+    bottom: 4%;
     left: 0;
     right: 0;
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
     margin: 0 auto; /* Центрування навігації */
     height: 50px; /* Збільшена висота для зручності */
-    padding: 0.5rem; /* Менші відступи всередині для економії простору */
+    padding: .5rem; /* Менші відступи всередині для економії простору */
     display: flex;
     
     align-items: center;
@@ -76,8 +76,8 @@ body {
     }
     
     .nav-item {
-        width: 80px;
-        height: 80px;
+        width: 65px;
+        height: 65px;
     }
 }
 
