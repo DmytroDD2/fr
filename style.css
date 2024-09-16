@@ -20,59 +20,7 @@ body {
     padding: 20px; /* Додаємо трохи відступів для краси */
 }
 
-.animation-container img {
-    width: 80%; /* Використовуємо відсотки для адаптивності */
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
 
-.svg-button {
-    width: 80vw; /* Ширина в 20% від ширини вікна оглядача */
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1/1; /* Ставимо аспект-ратио, щоб зберегти пропорції 1:1 */
-}
-
-/* Ensure SVG scales properly */
-.svg-button svg {
-    width: 100%;
-    height: 100%; /* Щоб SVG займав всю кнопку і зберігав пропорції */
-    object-fit: contain; /* Забезпечує, що SVG не виходить за межі і зберігає співвідношення сторін */
-}
-
-
-.svg-button img {
-    width: 100%;
-    height: 100%; /* Make SVG fill the button and maintain proportions */
-}
-
-
-
-
-/* Media query for screens up to 600px wide */
-@media (max-width: 600px) {
-    .svg-button {
-        width: 900vw; /* Adjust width for smaller screens */
-        max-width: 1500px; /* Adjust maximum width */
-        aspect-ratio: 6 / 4; /* Maintain aspect ratio */
-    }
-}
-
-/* Media query for screens up to 400px wide */
-@media (max-width: 150px) {
-    .svg-button {
-        width: 800vw; /* Adjust width for very small screens */
-        max-width: 1150px; /* Adjust maximum width */
-        aspect-ratio: 1 / 1; /* Maintain aspect ratio */
-    }
-}
- 
 
 .navigation {
     /* Додайте деякі базові стилі до панелі навігації */
@@ -82,7 +30,7 @@ body {
      
     width: 54%;
     position: absolute;
-    bottom: 10;
+    bottom: 1%;
     position: fixed;
      /* Розташуйте внизу екрана */
     height: 30px; /* Встановіть висоту */
@@ -127,69 +75,21 @@ body {
 
 
 
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .navigation {
-        width: 90%; /* Панель займає майже всю ширину */
-        bottom: 5px; /* Невеликий відступ від низу */
-        left: 5%; /* Відступи зліва і справа */
-        right: 5%;
+        width: 90%; /* Ширше меню для мобільних пристроїв */
+        height: 50px;
     }
     
     .nav-item {
-        width: 50px; /* Зменшений розмір кнопок для мобільних */
-        height: 50px;
-    }
-
-    .nav-item object[type="image/svg+xml"] {
-        width: 18px; /* Менший розмір іконок для мобільних */
-        height: 18px;
-    }
-}
-
-/* Дуже маленькі екрани (наприклад, телефони) */
-@media (max-width: 480px) {
-    .navigation {
-        width: 100%; /* Панель займає всю ширину */
-        padding: 0.5rem; /* Менший відступ */
-        bottom: 0; /* Розташування прямо біля нижнього краю */
-        left: 0;
-        right: 0;
-    }
-
-    .nav-item {
-        width: 58px;
+        width: 40px;
         height: 40px;
     }
 
     .nav-item object[type="image/svg+xml"] {
-        width: 16px;
-        height: 16px;
+        width: 25px;
+        height: 25px;
     }
 }
 
 
-
-@media (max-width: 150px) {
-    .navigation {
-        width: 100%; /* Панель займає всю ширину */
-        padding: 0.5rem; /* Менший відступ */
-        bottom: 0; /* Розташування прямо біля нижнього краю */
-        left: 0%;
-        right: 0;
-        padding-bottom: 60%;
-    }
-
-    .nav-item {
-        width: 30px;
-        height: 30px;
-       
-    }
-
-    .nav-item object[type="image/svg+xml"] {
-        width: 160px;
-        height: 16px;
-    }
-}
