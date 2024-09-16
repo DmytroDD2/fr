@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: space-around; /* Рівномірний розподіл елементів */
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Напівпрозорий фон */
+ 
     border-radius: 10px; /* Округлені кути */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
 }
