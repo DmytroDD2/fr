@@ -1,18 +1,14 @@
 {
-    "livePreview.defaultPreviewPath": "/index.html",
-    "liveServer.settings.multiRootWorkspaceName": "coin",
-    "livePreview.showServerStatusNotifications": false,
-    "livePreview.tasks.runTaskWithExternalPreview": false,
+    
     "markdown.preview.scrollEditorWithPreview": true,
     "markdown.preview.scrollPreviewWithEditor": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.enablePreview": true,
-    "livePreview.debugOnExternalPreview": true,
-    "livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 3,
-    "livePreview.autoRefreshPreview": "On All Changes in Editor",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "notebook.formatOnCellExecution": true,
     "mediaPreview.video.autoPlay": true,
     "mediaPreview.video.loop": true,
-    "files.autoSave": "onWindowChange"
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": false,
+    "liveServer.settings.multiRootWorkspaceName": "coin"
 }
