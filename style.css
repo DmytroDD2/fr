@@ -177,14 +177,15 @@ body {
         width: 100%; /* Панель займає всю ширину */
         padding: 0.5rem; /* Менший відступ */
         bottom: 0; /* Розташування прямо біля нижнього краю */
-        left: 0;
+        left: 0%;
         right: 0;
         padding-bottom: 60%;
     }
 
     .nav-item {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+       
     }
 
     .nav-item object[type="image/svg+xml"] {
