@@ -24,7 +24,7 @@ body {
 .navigation {
     border-radius: 50%;
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
     left: 0;
     right: 0;
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
@@ -73,7 +73,7 @@ body {
 
 @media (max-width: 600px) {
     .navigation {
-        width: 95%; /* Ширше меню для мобільних пристроїв */
+        width: 93%; /* Ширше меню для мобільних пристроїв */
         height: 50px;
     }
     
