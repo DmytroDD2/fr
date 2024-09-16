@@ -28,7 +28,7 @@ body {
     right: 0;
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
     margin: 0 auto; /* Центрування навігації */
-    height: 60px; /* Збільшена висота для зручності */
+    height: 50px; /* Збільшена висота для зручності */
     padding: 0.5rem; /* Менші відступи всередині для економії простору */
     display: flex;
     
@@ -41,7 +41,7 @@ body {
   
 .nav-item {
     background-color: #4D4D4D;
-    max-width: 60px;
+    max-width: 80px;
     background-size: 20px 25px;
     cursor: pointer; /* Make items clickable */
 
@@ -76,8 +76,8 @@ body {
     }
     
     .nav-item {
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
     }
 }
 
