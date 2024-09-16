@@ -18,7 +18,7 @@ body {
     min-height: 100vh; /* Контейнер займає щонайменше всю висоту екрану */
     text-align: center;
     padding: 20px; /* Додаємо трохи відступів для краси */
-}
+}  
 
 
 .navigation {
