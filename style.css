@@ -169,3 +169,26 @@ body {
         height: 16px;
     }
 }
+
+
+
+@media (max-width: 150px) {
+    .navigation {
+        width: 100%; /* Панель займає всю ширину */
+        padding: 0.5rem; /* Менший відступ */
+        bottom: 0; /* Розташування прямо біля нижнього краю */
+        left: 0;
+        right: 0;
+        padding-bottom: 60%;
+    }
+
+    .nav-item {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-item object[type="image/svg+xml"] {
+        width: 160px;
+        height: 16px;
+    }
+}
