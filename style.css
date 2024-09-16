@@ -22,8 +22,9 @@ body {
 
 
 .navigation {
+    border-radius: 50%;
     position: fixed;
-    bottom: 10%;
+    bottom: 2%;
     left: 0;
     right: 0;
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
@@ -35,15 +36,17 @@ body {
     align-items: center;
     border-radius: 10px; /* Округлені кути */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    
 }
 
   
 .nav-item {
+    
     background-color: #4D4D4D;
     max-width: 80px;
     background-size: 20px 25px;
     cursor: pointer; /* Make items clickable */
-
+    
 }
 
 .nav-item:hover {
@@ -75,8 +78,8 @@ body {
     }
     
     .nav-item {
-        width: 55px;
-        height: 43px;
+        width: 66px;
+        height: 48px;
     }
 }
 
