@@ -21,26 +21,22 @@ body {
 }
 
 
-
 .navigation {
-    /* Додайте деякі базові стилі до панелі навігації */
-    /* Світло-сірий фон */
-    
-    /* background-color: #f0f0f0; */
-     
-    width: 80%;
-    position: absolute;
-    bottom: 1%;
     position: fixed;
-     /* Розташуйте внизу екрана */
-    height: 30px; /* Встановіть висоту */
-     /* Займайте всю ширину екрана */
-    padding: 0.5rem; /* Додайте деякий відступ */
-    display: flex; /* Зробіть елементи навігації в ряд */ 
-    align-items: flex-end; /* Вертикально центруйте елементи */
-   
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    width: 80%; /* Збільшена ширина для більш зручного розташування на екрані */
+    margin: 0 auto; /* Центрування навігації */
+    height: 60px; /* Збільшена висота для зручності */
+    padding: 0.5rem; /* Менші відступи всередині для економії простору */
+    display: flex;
+    justify-content: space-around; /* Рівномірний розподіл елементів */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Напівпрозорий фон */
+    border-radius: 10px; /* Округлені кути */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
 }
-
 
   
 .nav-item {
