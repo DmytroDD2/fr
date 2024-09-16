@@ -31,9 +31,8 @@ body {
     height: 50px; /* Збільшена висота для зручності */
     padding: .5rem; /* Менші відступи всередині для економії простору */
     display: flex;
-    
+    justify-content: center;
     align-items: center;
-    
     border-radius: 10px; /* Округлені кути */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
 }
@@ -77,7 +76,7 @@ body {
     
     .nav-item {
         width: 55px;
-        height: 50px;
+        height: 43px;
     }
 }
 
