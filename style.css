@@ -24,7 +24,7 @@ body {
 .navigation {
     border-radius: 50%;
     position: fixed;
-    bottom: 6%;
+    bottom: 5mm;
     left: 0;
     right: 0;
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
@@ -42,7 +42,7 @@ body {
   
 .nav-item {
     
-    background-color: #333333;
+    background-color: #8e8c8c;
     max-width: 80px;
     background-size: 20px 25px;
     cursor: pointer; /* Make items clickable */
@@ -65,8 +65,8 @@ body {
 
 /* Стиль для активної кнопки */
 .nav-item.active {
-    background-color: #8e8c8c; /* Можна змінити колір для активної кнопки */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Можна додати тінь */
+    background-color: #333333; /* Можна змінити колір для активної кнопки */
+    box-shadow: 0 0 10px #39B54A; /* Можна додати тінь */
 }
 
 .nav-item:first-child {

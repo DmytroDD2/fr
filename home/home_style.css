@@ -6,7 +6,7 @@
     margin: 0 auto; /* Центрування по горизонталі */
     width: 62%; /* Задаємо ширину блоку */
     padding: 2%;
-    height: 21%;
+    height: rmm;
     text-align: center;
     margin-top: 5%;
     
@@ -14,8 +14,8 @@
 
 
   .progress-bar {
-    height: 13%;
-    background-color: hsl(91, 88%, 62%); /* Колір заповнення */
+    height: 5mm;
+    background-color: #8CC63F ; /* Колір заповнення */
     border-radius: 5px;
   }
 
@@ -43,8 +43,8 @@
     color: white;
     border: none;
     padding: 1px 3px;
-    width: 90%; /* Задаємо ширину кнопки 100% від ширини блоку */
-    height: 100%;
+    width: 55.5mm; /* Задаємо ширину кнопки 100% від ширини блоку */
+    height: 12.5mm;
     border-radius: 5px;
     cursor: pointer;
     
@@ -57,11 +57,11 @@
 
 .donate-bar {
   position: fixed;
-  height: 7px; /* Висота лінії */
+  height: 5mm; /* Висота лінії */
   width: 60%;
   border-radius: 5px; /* Заокруглені кути */
   padding: 1%;
-  background-color: hsl(91, 88%, 62%); /* Колір заповнення */
+  background-color: #8CC63F ; /* Колір заповнення */
   bottom: 34%;
   left: 0;
   right: 0;
@@ -72,7 +72,7 @@
 }
 
 .pay-bar {
-  height: 25%;
+  height: 5mm;
   /* background-color: hsl(91, 88%, 62%); Колір заповнення */
   border-radius: 5px;
   
