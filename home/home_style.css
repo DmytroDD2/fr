@@ -14,19 +14,19 @@
 
 
   .progress-bar {
-    height: 11%;
+    height: 13%;
     background-color: hsl(91, 88%, 62%); /* Колір заповнення */
     border-radius: 5px;
   }
 
 .donate-container {
     position: fixed;
-    bottom: 23%;
+    bottom: 20%;
     left: 0;
     right: 0;
     margin: 0 auto; /* Центрування по горизонталі */
     width: 63%; /* Задаємо ширину блоку */
-    height: 8%;
+    height: 10%;
     padding: 1%;
     text-align: center;
    
@@ -57,12 +57,12 @@
 
 .donate-bar {
   position: fixed;
-  height: 5px; /* Висота лінії */
+  height: 7px; /* Висота лінії */
   width: 60%;
   border-radius: 5px; /* Заокруглені кути */
   padding: 1%;
   background-color: hsl(91, 88%, 62%); /* Колір заповнення */
-  bottom: 38%;
+  bottom: 34%;
   left: 0;
   right: 0;
   margin: auto;
