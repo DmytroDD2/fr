@@ -4,69 +4,83 @@
     left: 0;
     right: 0;
     margin: 0 auto; /* Центрування по горизонталі */
-    width: 65%; /* Задаємо ширину блоку */
+    width: 62%; /* Задаємо ширину блоку */
     padding: 2%;
     height: 21%;
     text-align: center;
+    margin-top: 5%;
+    
 }
 
-.experience-bar {
-    height: 15%; /* Висота лінії */
-    width: 132%;
-    border-radius: 5px; /* Заокруглені кути */
-    padding: auto;
-  }
 
   .progress-bar {
-    height: 14%;
+    height: 11%;
     background-color: hsl(91, 88%, 62%); /* Колір заповнення */
     border-radius: 5px;
   }
 
 .donate-container {
     position: fixed;
-    bottom: 21%;
+    bottom: 23%;
     left: 0;
     right: 0;
     margin: 0 auto; /* Центрування по горизонталі */
     width: 63%; /* Задаємо ширину блоку */
-    padding: 2%;
-    height: 22%;
+    height: 8%;
+    padding: 1%;
     text-align: center;
+   
+    /* background-color: hsl(141, 78%, 51%); */
+    
+    
 }
-
 
 
 
 .donate-button {
     font-size: 200%;
-    background-color: hsl(136, 96%, 55%);
+    background-color: hsl(141, 78%, 51%);
     color: white;
     border: none;
     padding: 1px 3px;
-    width: 100%; /* Задаємо ширину кнопки 100% від ширини блоку */
-    height: 49%;
+    width: 90%; /* Задаємо ширину кнопки 100% від ширини блоку */
+    height: 100%;
     border-radius: 5px;
     cursor: pointer;
     
+    
 }
+
+    
+    
 
 
 .donate-bar {
-  height: 68%; /* Висота лінії */
-  width: 132%;
+  position: fixed;
+  height: 5px; /* Висота лінії */
+  width: 60%;
   border-radius: 5px; /* Заокруглені кути */
-  padding: auto;
+  padding: 1%;
+  background-color: hsl(91, 88%, 62%); /* Колір заповнення */
+  bottom: 38%;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+   
+  
 }
 
 .pay-bar {
-  height: 26%;
-  background-color: hsl(91, 88%, 62%); /* Колір заповнення */
+  height: 25%;
+  /* background-color: hsl(91, 88%, 62%); Колір заповнення */
   border-radius: 5px;
+  
 }
 
 @media (max-width: 768px) {
   .experience-container, .donate-container {
     width: 69%;
+    
   }
 }
