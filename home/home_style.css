@@ -10,9 +10,6 @@
     text-align: center;
 }
 
-
-
-
 .experience-bar {
     height: 15%; /* Висота лінії */
     width: 132%;
@@ -26,28 +23,9 @@
     border-radius: 5px;
   }
 
-
-
-.donate-bar {
-    height: 60%; /* Висота лінії */
-    width: 132%;
-    border-radius: 5px; /* Заокруглені кути */
-    padding: auto;
-  }
-  
-  .pay-bar {
-    height: 25%;
-    background-color: hsl(91, 88%, 62%); /* Колір заповнення */
-    border-radius: 5px;
-  }
-
-
-
-
-
 .donate-container {
     position: fixed;
-    bottom: 28%;
+    bottom: 21%;
     left: 0;
     right: 0;
     margin: 0 auto; /* Центрування по горизонталі */
@@ -71,4 +49,24 @@
     border-radius: 5px;
     cursor: pointer;
     
+}
+
+
+.donate-bar {
+  height: 68%; /* Висота лінії */
+  width: 132%;
+  border-radius: 5px; /* Заокруглені кути */
+  padding: auto;
+}
+
+.pay-bar {
+  height: 26%;
+  background-color: hsl(91, 88%, 62%); /* Колір заповнення */
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .experience-container, .donate-container {
+    width: 69%;
+  }
 }
