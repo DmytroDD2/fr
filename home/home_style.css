@@ -1,0 +1,74 @@
+.experience_container {
+    position: fixed;
+    margin-bottom: 1%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Центрування по горизонталі */
+    width: 65%; /* Задаємо ширину блоку */
+    padding: 2%;
+    height: 21%;
+    text-align: center;
+}
+
+
+
+
+.experience-bar {
+    height: 15%; /* Висота лінії */
+    width: 132%;
+    border-radius: 5px; /* Заокруглені кути */
+    padding: auto;
+  }
+
+  .progress-bar {
+    height: 14%;
+    background-color: hsl(91, 88%, 62%); /* Колір заповнення */
+    border-radius: 5px;
+  }
+
+
+
+.donate-bar {
+    height: 60%; /* Висота лінії */
+    width: 132%;
+    border-radius: 5px; /* Заокруглені кути */
+    padding: auto;
+  }
+  
+  .pay-bar {
+    height: 25%;
+    background-color: hsl(91, 88%, 62%); /* Колір заповнення */
+    border-radius: 5px;
+  }
+
+
+
+
+
+.donate-container {
+    position: fixed;
+    bottom: 28%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Центрування по горизонталі */
+    width: 63%; /* Задаємо ширину блоку */
+    padding: 2%;
+    height: 22%;
+    text-align: center;
+}
+
+
+
+
+.donate-button {
+    font-size: 200%;
+    background-color: hsl(136, 96%, 55%);
+    color: white;
+    border: none;
+    padding: 1px 3px;
+    width: 100%; /* Задаємо ширину кнопки 100% від ширини блоку */
+    height: 49%;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}

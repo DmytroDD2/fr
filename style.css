@@ -42,7 +42,7 @@ body {
   
 .nav-item {
     
-    background-color: #4D4D4D;
+    background-color: #333333;
     max-width: 80px;
     background-size: 20px 25px;
     cursor: pointer; /* Make items clickable */
@@ -70,7 +70,7 @@ body {
 }
 
 .nav-item:first-child {
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
 }
 
 /* Закруглюємо правий верхній і правий нижній краї для останньої кнопки */
