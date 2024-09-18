@@ -41,5 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Завантажуємо домашню сторінку за замовчуванням
+    
     loadContent('home/home.html');
+    // loadContent(navItems[0].getAttribute('home/home.html'));
 });
