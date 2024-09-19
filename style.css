@@ -24,7 +24,7 @@ body {
 .navigation {
     border-radius: 50%;
     position: fixed;
-    bottom: 24mm;
+    bottom: 14mm;
     left: 0;
     right: 0;
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
