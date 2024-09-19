@@ -48,9 +48,9 @@ body {
      
 }
 
-.nav-item:hover {
+/* .nav-item:hover {
     opacity: 0.8;
-}
+} */
 
 .nav-item:active {
     transform: scale(0.9);

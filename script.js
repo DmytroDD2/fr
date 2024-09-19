@@ -22,6 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
+    function setActiveButtonDefault() {
+        // Спочатку прибираємо клас "active" з усіх кнопок
+        navItems.forEach(item => item.classList.remove('active'));
+        
+        // Додаємо клас "active" до кнопки "Home"
+        const homeButton = navItems[0];
+        homeButton.classList.add('active');
+    }
+
     // Функція для встановлення активної кнопки
     function setActiveButton(Event) {
         // Спочатку прибираємо клас "active" з усіх кнопок
@@ -43,5 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Завантажуємо домашню сторінку за замовчуванням
     
     loadContent('home/home.html');
+    setActiveButtonDefault()
     // loadContent(navItems[0].getAttribute('home/home.html'));
 });
