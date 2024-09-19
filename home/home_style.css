@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 240px;
+  gap: 275px;
 }
 
 .experience-container, .donate-conteainer{
@@ -48,7 +48,7 @@
   border-radius: 5px;
   cursor: pointer;
   position: absolute; /* Add this to position the button absolutely */
-  bottom: 41mm; /* Position the button at the bottom */
+  bottom: 34mm; /* Position the button at the bottom */
   left: 50%; /* Position the button at the center horizontally */
   transform: translateX(-50%); /* Adjust the button's position to be perfectly centered */
 }
