@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 79mm;
+  gap: 80mm;
 }
 
 .experience-container, .donate-conteainer{
@@ -33,6 +33,9 @@
   background-color: #8CC63F ;
   border-radius: 5px;
   
+}
+.progress-bar{
+  height: 4.7mm;
 }
 
 

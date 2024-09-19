@@ -41,12 +41,11 @@ body {
 
   
 .nav-item {
-    
     background-color: #4D4D4D ;
     max-width: 80px;
     background-size: 20px 25px;
     cursor: pointer; /* Make items clickable */
-    
+     
 }
 
 .nav-item:hover {
