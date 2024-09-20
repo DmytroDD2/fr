@@ -1,4 +1,5 @@
 body {
+
     background-image: url('Background-VIC.svg');
     background-size: cover;
     background-position: center;
@@ -11,6 +12,7 @@ body {
 
 
 .container {
+ 
     display: flex;
     flex-direction: column;
     justify-content: center; /* Центр по вертикалі */
@@ -22,8 +24,10 @@ body {
 
 
 .navigation {
+    position: absolute;
+   
+   
     border-radius: 50%;
-    position: fixed;
     bottom: 10mm;
     left: 0;
     right: 0;
@@ -37,6 +41,7 @@ body {
     border-radius: 10px; /* Округлені кути */
     
     
+    
 }
 
   
@@ -45,6 +50,7 @@ body {
     max-width: 80px;
     background-size: 20px 25px;
     cursor: pointer; /* Make items clickable */
+    
      
 }
 
@@ -77,17 +83,60 @@ body {
     border-radius: 0 5px 5px 0;
 }
 
-@media (max-width: 600px) {
+body {
+    min-height: 80vh;
+  }
+  
+  /* Adjust styles for mobile devices */
+  @media (max-width: 480px) {
+    body {
+      min-height: 60vh;
+    }
     .navigation {
-        width: 93%; /* Ширше меню для мобільних пристроїв */
+        width: 93%; 
         height: 50px;
-        bottom: 43mm;
+        bottom: 12mm;
+        
+    }
+    .nav-item {
+        width: 19.35%;
+        height: 110%;
+    }
+  }
+  
+  /* Adjust styles for tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    body {
+      min-height: 70vh;
+    }
+    .navigation {
+        width: 93%; 
+        height: 50px;
+        bottom: 5mm;
+        
+    }
+  }
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 600px) {
+    .navigation {
+        width: 93%; 
+        height: 50px;
+        bottom: 22%;
+        
     }
     
     .nav-item {
         width: 19.35%;
         height: 110%;
     }
-}
+} */
 
 

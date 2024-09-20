@@ -5,6 +5,7 @@
   align-items: center;
   gap: 80mm;
   font-size: 11px;
+  
 }
 
 .experience-container, .donate-conteainer{
@@ -13,7 +14,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
- 
   border-radius: 10px;
   padding: 20px;
   width: 80.6mm;
@@ -103,17 +103,42 @@
 }
 
 
-@media (max-width: 768px) {
+
+
+.lins {
+  gap: 80mm;
+}
+
+/* Adjust styles for mobile devices */
+@media (max-width: 480px) {
+  .lins {
+    gap: 84mm;
+  }
+  .donate-button{
+    bottom: 34mm;
+  }
+}
+
+/* Adjust styles for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .lins {
+    gap: 85mm;
+  }
+}
+
+
+/* @media (max-width: 700px) {
   .lins{
-    gap: 99mm;
+    gap: 1000%;
  
       
   }
 
   .donate-button{
-    bottom: 66mm;
+    bottom: 34%;
   }
   
   .duck{bottom: 88mm;}
+  
 
-}
+} */
