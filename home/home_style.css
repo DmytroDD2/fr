@@ -132,7 +132,7 @@
 }
 
 /* Adjust styles for tablets */
-@media (min-width: 481px) and (max-width: 768px) {
+/* @media (min-width: 481px) and (max-width: 768px) {
   .lins {
     gap: 62vh;
   }
@@ -141,6 +141,20 @@
   }
   .duck{bottom: 30vh;}
 
+} */
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Додаємо клас для більшої специфічності */
+  .tablet .lins {
+    gap: 62vh;
+  }
+  .tablet .donate-button {
+    bottom: 19vh;
+  }
+  .tablet .duck {
+    bottom: 30vh;
+  }
 }
 
 /* @media (max-width: 700px) {
