@@ -95,10 +95,11 @@ body {
     .navigation {
         width: 93%; 
         height: 50px;
-        bottom: 12mm;
+        bottom: 14vh
         
     }
     .nav-item {
+        
         width: 19.35%;
         height: 110%;
     }
@@ -112,7 +113,7 @@ body {
     .navigation {
         width: 93%; 
         height: 50px;
-        bottom: 5mm;
+        bottom: 5vh;
         
     }
   }

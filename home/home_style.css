@@ -109,14 +109,26 @@
   gap: 80mm;
 }
 
+
+@media (max-width: 100px) {
+  .lins {
+    gap: 49vh;
+  }
+  .donate-button{
+    bottom: 27vh;
+  }
+  .duck{bottom: 37vh;}
+}
+
 /* Adjust styles for mobile devices */
 @media (max-width: 480px) {
   .lins {
-    gap: 84mm;
+    gap: 47vh;
   }
   .donate-button{
-    bottom: 34mm;
+    bottom: 27vh;
   }
+  .duck{bottom: 37vh;}
 }
 
 /* Adjust styles for tablets */
