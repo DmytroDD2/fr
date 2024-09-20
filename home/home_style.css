@@ -134,10 +134,14 @@
 /* Adjust styles for tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   .lins {
-    gap: 85mm;
+    gap: 62vh;
   }
-}
+  .donate-button{
+    bottom: 19vh;
+  }
+  .duck{bottom: 30vh;}
 
+}
 
 /* @media (max-width: 700px) {
   .lins{
