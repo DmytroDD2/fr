@@ -104,7 +104,16 @@
 
 
 @media (max-width: 768px) {
-  .experience-container {
-      width: 69%;
+  .lins{
+    gap: 99mm;
+ 
+      
   }
+
+  .donate-button{
+    bottom: 66mm;
+  }
+  
+  .duck{bottom: 88mm;}
+
 }

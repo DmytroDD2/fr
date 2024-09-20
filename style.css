@@ -81,6 +81,7 @@ body {
     .navigation {
         width: 93%; /* Ширше меню для мобільних пристроїв */
         height: 50px;
+        bottom: 43mm;
     }
     
     .nav-item {
