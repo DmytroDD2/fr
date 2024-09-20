@@ -123,10 +123,10 @@
 /* Adjust styles for mobile devices */
 @media (max-width: 480px) {
   .lins {
-    gap: 50vh;
+    gap: 53vh;
   }
   .donate-button{
-    bottom: 24vh;
+    bottom: 21vh;
   }
   .duck{bottom: 37vh;}
 }
