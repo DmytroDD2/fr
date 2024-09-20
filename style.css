@@ -90,12 +90,12 @@ body {
   /* Adjust styles for mobile devices */
   @media (max-width: 480px) {
     body {
-      min-height: 60vh;
+      min-height: 85vh;
     }
     .navigation {
         width: 93%; 
         height: 50px;
-        bottom: 14vh
+        bottom: 10vh
         
     }
     .nav-item {
