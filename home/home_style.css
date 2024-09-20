@@ -132,12 +132,13 @@
 }
 
 /* Adjust styles for tablets */
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .lins {
-    gap: 62vh;
+    gap: 59vh;
   }
   .donate-button{
     bottom: 19vh;
+    background: #4D4D4D;
   }
   .duck{bottom: 30vh;}
 
