@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 80mm;
+  font-size: 11px;
 }
 
 .experience-container, .donate-conteainer{
@@ -15,24 +16,61 @@
  
   border-radius: 10px;
   padding: 20px;
-  width: 71.7mm;
+  width: 80.6mm;
   height: 10px;
   flex-direction: row;
-  margin-right: 35px;
+  margin-right: 3px;
 }
 
 .image {
   width: 7mm;
-  height: 7mm;
-  
+  height: 7mm; 
+}
+
+
+.count-pay{
+  height: 29px;
+  color: white;
+}
+
+.count-prog{
+  height: 29px;
+  color: white;
+}
+
+.bottom-right-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
 }
 
 .progress-bar, .pay-bar{
   width: 100%; 
   height: 5mm;
-  background-color: #8CC63F ;
+  background-color: #4D4D4D ;
+
   border-radius: 5px;
   
+}
+
+.progress-fill, .pay-fill {
+  height: 100%;
+  background-color: #8CC63F; /* green color for filled part */
+  border-radius: 5px;
+  width: 0% ;
+  
+}
+
+#vic-progress{
+  width: 10% ;
+  height: 5mm;
+
+
+}
+
+#uah-progress{
+  width: 0%;
 }
 .progress-bar{
   height: 4.7mm;

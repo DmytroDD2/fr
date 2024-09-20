@@ -53,5 +53,30 @@ document.addEventListener('DOMContentLoaded', function() {
     
     loadContent('home/home.html');
     setActiveButtonDefault()
-    // loadContent(navItems[0].getAttribute('home/home.html'));
+    
+    // Function to get URL parameters
+    function getUrlParams() {
+        const currentUrl = new URL(window.location.href);
+        const urlParams = new URLSearchParams(currentUrl.search);
+        return {
+            vicPercentage: urlParams.get('vicPercentage'),
+            uahPercentage: urlParams.get('uahPercentage')
+        };
+    }
+
+    // Function to update progress bars
+    function updateProgressBars() {
+        const { vicPercentage, uahPercentage } = getUrlParams();
+
+        const vicProgress = document.getElementById('vic-progress');
+        const uahProgress = document.getElementById('uah-progress');
+
+        vicProgress.style.width = vicPercentage + '%';
+        uahProgress.style.width = uahPercentage + '%';
+    }
+
+    // Call the updateProgressBars function when the page loads
+    window.addEventListener('load', updateProgressBars);
 });
+
+
