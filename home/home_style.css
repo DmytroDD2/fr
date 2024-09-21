@@ -134,7 +134,7 @@
 /* Adjust styles for tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   .lins {
-    gap: 59vh;
+    gap: 82vw;
   }
   .donate-button{
     bottom: 19vh;
