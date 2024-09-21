@@ -1,6 +1,6 @@
 body {
 
-    background-image: url('Background-VIC.svg');
+    background-image: url('New gradient SV копія.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,6 +70,8 @@ body {
 
 /* Стиль для активної кнопки */
 .nav-item.active {
+    
+    
     background-color: #333333; /* Можна змінити колір для активної кнопки */
     box-shadow: 0 0 10px #333333; /* Можна додати тінь */
 }
