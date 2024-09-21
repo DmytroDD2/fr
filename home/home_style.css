@@ -114,13 +114,13 @@
 
 @media (max-width: 480px) {
   .donate-conteainer{
-    bottom: 151px;
+    bottom: 149px;
   }
 
   .donate-button{
     /* bottom: 21vh; */
     height: 51px;
-    bottom: 97px;
+    bottom: 96px;
   }
   .duck{bottom: 37vh;}
 }
@@ -128,12 +128,12 @@
 /* Adjust styles for tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   .donate-container {
-    bottom: 151px;
+    bottom: 149px;
   }
 
   .donate-button {
     height: 51px;
-    bottom: 97px;
+    bottom: 96px;
   }
 
   .duck {
