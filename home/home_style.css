@@ -116,12 +116,12 @@
 
 @media (max-width: 480px) {
   .donate-conteainer{
-    bottom: 150px;
+    bottom: 165px;
   }
 
   .donate-button{
     /* bottom: 21vh; */
-    bottom: 90px;
+    bottom: 105px;
   }
   .duck{bottom: 37vh;}
 }
