@@ -12,9 +12,7 @@
   height: 10px;
   flex-direction: row;
   font-size: 11px;
-  font-size: 11px;
   position: absolute;
-
   left: 50%;
   transform: translateX(-50%);
 }
@@ -116,12 +114,12 @@
 
 @media (max-width: 480px) {
   .donate-conteainer{
-    bottom: 165px;
+    bottom: 151px;
   }
 
   .donate-button{
     /* bottom: 21vh; */
-    bottom: 105px;
+    bottom: 97px;
   }
   .duck{bottom: 37vh;}
 }

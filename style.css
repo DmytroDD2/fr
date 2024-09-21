@@ -103,10 +103,13 @@ body {
     }
     .nav-item {
         
-        /* width: 19.35%;
-        height: 110%; */
-        height: 63px;
-        width: 70px;
+        /* width: 19.35%; */
+        /* height: 110%; */
+        
+        height: 60px;
+        width: 78px;
+        overflow: hidden;
+        
     }
   }
   
