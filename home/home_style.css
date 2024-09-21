@@ -3,8 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80mm;
+  gap: 225px;
   font-size: 11px;
+
   
 }
 
@@ -20,6 +21,7 @@
   height: 10px;
   flex-direction: row;
   margin-right: 3px;
+  
 }
 
 .image {
@@ -105,9 +107,9 @@
 
 
 
-.lins {
+/* .lins {
   gap: 80mm;
-}
+} */
 
 
 @media (max-width: 100px) {
@@ -124,7 +126,7 @@
 @media (max-width: 480px) {
   .lins {
     /* gap: 53vh; */
-    gap: 410px;
+    gap: 315px;
   }
   .donate-button{
     /* bottom: 21vh; */
@@ -136,7 +138,7 @@
 /* Adjust styles for tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   .lins {
-    gap: 420px;
+    /* gap: 420px; */
   }
   .donate-button{
     bottom: 19vh;
