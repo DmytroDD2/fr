@@ -77,7 +77,7 @@
 }
 
 #uah-progress{
-  width: 0%;
+  width: 2%;
 }
 .progress-bar{
   height: 4.7mm;
@@ -119,6 +119,7 @@
 
   .donate-button{
     /* bottom: 21vh; */
+    height: 51px;
     bottom: 97px;
   }
   .duck{bottom: 37vh;}
