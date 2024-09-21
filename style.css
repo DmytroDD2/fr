@@ -90,19 +90,23 @@ body {
   /* Adjust styles for mobile devices */
   @media (max-width: 480px) {
     body {
-      min-height: 85vh;
+      /* min-height: 85vh; */
+      min-height: 100vh;
     }
 
     .navigation {
-        width: 93%; 
-        height: 50px;
-        bottom: 7vh
+        /* width: 93%; 
+        height: 50px; */
+        /* bottom: 7vh */
+        bottom: 15px;
         
     }
     .nav-item {
         
-        width: 19.35%;
-        height: 110%;
+        /* width: 19.35%;
+        height: 110%; */
+        height: 65px;
+        width: 71px;
     }
   }
   
