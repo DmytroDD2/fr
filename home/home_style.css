@@ -77,7 +77,7 @@
 }
 
 #uah-progress{
-  width: 2%;
+  width: 30%;
 }
 .progress-bar{
   height: 4.7mm;
@@ -127,10 +127,16 @@
 
 /* Adjust styles for tablets */
 @media (min-width: 481px) and (max-width: 768px) {
-
-  .donate-button{
-    bottom: 19vh;
+  .donate-container {
+    bottom: 151px;
   }
-  .duck{bottom: 30vh;}
 
+  .donate-button {
+    height: 51px;
+    bottom: 97px;
+  }
+
+  .duck {
+    bottom: 37vh;
+  }
 }
