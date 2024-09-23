@@ -26,13 +26,14 @@
     align-items: center;
     border-radius: 10px; /* Округлені кути */
     place-items: center; 
+    column-gap: 35px;
 }
 
 .don-item {
     background-image: url("donate_png/Button for donates.png") ;
     max-width: 80px;
     border-radius: 5%;
-    background-size: 20px 25px;
+    background-size: 25px 25px;
     cursor: pointer; /* Make items clickable */
     
      
@@ -61,6 +62,7 @@
         font-size: 15pt;
     }
     .donate_nav{
+       /* column-gap: 3px;  */
         
     }
 
@@ -71,6 +73,7 @@
         height: 83px;
         width: 83px;
         overflow: hidden;
+        
     }
   }
   
