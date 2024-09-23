@@ -18,10 +18,10 @@
     margin: 0 auto; /* Центрування навігації */
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
     height: 55px; /* Збільшена висота для зручності */
-    padding: .5rem; /* Менші відступи всередині для економії простору */
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 елементи в рядку */
-    gap: 20px;
+    gap: 40px;
    
     align-items: center;
     border-radius: 10px; /* Округлені кути */
@@ -68,8 +68,8 @@
         
         
         
-        height: 82px;
-        width: 82px;
+        height: 83px;
+        width: 83px;
         overflow: hidden;
     }
   }
@@ -87,8 +87,8 @@
         
         
         
-        height: 81.25px;
-        width: 81.25px;
+        height: 82px;
+        width: 82px;
         overflow: hidden;
     }
   }
