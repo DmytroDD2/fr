@@ -31,7 +31,7 @@
 
 .don-item {
     background-image: url("donate_png/Button for donates.png") ;
-    max-width: 80px;
+    max-width: 90px;
     border-radius: 5%;
     background-size: 25px 25px;
     cursor: pointer; /* Make items clickable */
