@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Завантажуємо домашню сторінку за замовчуванням
     
-    loadContent('home/home.html');
+    loadContent('donate/donate.html');
     setActiveButtonDefault()
     
     // Function to get URL parameters

@@ -1,6 +1,7 @@
 body {
 
-    background-image: url('New gradient SV копія.png');
+    /* background-image: url('New gradient SV копія.png'); */
+    background-image: url('Background-VIC.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,7 +112,6 @@ body {
         height: 53px;
         width: 75px;
         overflow: hidden;
-        
     }
   }
   

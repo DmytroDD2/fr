@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap'); /* Підключаємо шрифт Montserrat */
+
+.dontae-item{
+    margin-top: 34px;
+    font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
+    text-align: center;
+    font-size: 40pt;
+    color: aliceblue;
+}
+
+.donate_nav {
+    position: absolute;
+    top: 80px; /* Відстань від верху сторінки */
+    left: 0px;
+    right: 0;
+    border-radius: 50%;
+    margin: 0 auto; /* Центрування навігації */
+    width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
+    height: 55px; /* Збільшена висота для зручності */
+    padding: .5rem; /* Менші відступи всередині для економії простору */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 елементи в рядку */
+    gap: 20px;
+   
+    align-items: center;
+    border-radius: 10px; /* Округлені кути */
+    place-items: center; 
+}
+
+.don-item {
+    background-image: url("donate_png/Button for donates.png") ;
+    max-width: 80px;
+    border-radius: 5%;
+    background-size: 20px 25px;
+    cursor: pointer; /* Make items clickable */
+    
+     
+}
+
+
+.don-item:active {
+    transform: scale(0.9);
+    background-color: #333333; /* Можна змінити колір для активної кнопки */
+    box-shadow: 0 0 10px #333333; /* Можна додати тінь */
+}
+
+
+.nav-item.active {
+    
+    
+    background-color: #333333; /* Можна змінити колір для активної кнопки */
+    box-shadow: 0 0 10px #333333; /* Можна додати тінь */
+}
+
+
+
+  /* Adjust styles for mobile devices */
+  @media (max-width: 480px) {
+    .dontae-item{
+        font-size: 15pt;
+    }
+    .donate_nav{
+        
+    }
+    .donate_nav {
+        /* width: 93%; 
+        height: 50px; */
+        /* bottom: 7vh */
+        bottom: 15px;
+        
+    }
+    .nav-item {
+        
+        /* width: 19.35%; */
+        /* height: 110%; */
+        
+        height: 53px;
+        width: 75px;
+        overflow: hidden;
+    }
+  }
+  
+  /* Adjust styles for tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    body {
+      min-height: 100vh;
+    }
+  
+    .navigation {
+      bottom: 15px;
+    }
+  
+    .nav-item {
+      height: 53px;
+      width: 75px;
+      overflow: hidden;
+    }
+  }
