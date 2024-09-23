@@ -68,25 +68,27 @@
         
         
         
-        height: 81.25px;
-        width: 81.25px;
+        height: 82px;
+        width: 82px;
         overflow: hidden;
     }
   }
   
   /* Adjust styles for tablets */
   @media (min-width: 481px) and (max-width: 768px) {
-    body {
-      min-height: 100vh;
+    .dontae-item{
+        font-size: 15pt;
     }
-  
-    .navigation {
-      bottom: 15px;
+    .donate_nav{
+        
     }
-  
-    .nav-item {
-      height: 53px;
-      width: 75px;
-      overflow: hidden;
+
+    .don-item {
+        
+        
+        
+        height: 81.25px;
+        width: 81.25px;
+        overflow: hidden;
     }
   }
