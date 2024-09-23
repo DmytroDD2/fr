@@ -63,19 +63,12 @@
     .donate_nav{
         
     }
-    .donate_nav {
-        /* width: 93%; 
-        height: 50px; */
-        /* bottom: 7vh */
-        bottom: 15px;
+
+    .don-item {
         
-    }
-    .nav-item {
         
-        /* width: 19.35%; */
-        /* height: 110%; */
         
-        height: 53px;
+        height: 75px;
         width: 75px;
         overflow: hidden;
     }
