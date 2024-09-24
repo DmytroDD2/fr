@@ -1,13 +1,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap'); /* Підключаємо шрифт Montserrat */
 
-.dontae-item{
+.donate-item{
     margin-top: 34px;
     font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
     text-align: center;
     font-size: 40pt;
     color: aliceblue;
+    
 }
+
+/* #close-button {
+    color: aliceblue;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+} */
+
+/* #overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+} */
 
 .donate_nav {
     position: absolute;
@@ -30,7 +50,8 @@
 }
 
 .don-item {
-    background-image: url("donate_png/Button for donates.png") ;
+    background-color: #4D4D4D ;
+    /* background-image: url("donate_png/Button for donates.png") ; */
     max-width: 90px;
     border-radius: 5%;
     background-size: 25px 25px;
@@ -47,7 +68,7 @@
 }
 
 
-.nav-item.active {
+.don-item.active {
     
     
     background-color: #333333; /* Можна змінити колір для активної кнопки */
@@ -61,10 +82,7 @@
     .dontae-item{
         font-size: 15pt;
     }
-    .donate_nav{
-       /* column-gap: 3px;  */
-        
-    }
+   
 
     .don-item {
         
@@ -82,9 +100,7 @@
     .dontae-item{
         font-size: 15pt;
     }
-    .donate_nav{
-        
-    }
+   
 
     .don-item {
         
@@ -95,3 +111,10 @@
         overflow: hidden;
     }
   }
+
+
+
+
+
+
+

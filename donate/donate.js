@@ -1,11 +1,7 @@
-// script.js
-
-
 document.addEventListener('DOMContentLoaded', function() {
-    const navItems = document.querySelectorAll('.nav-item');
-    
+    const navItems = document.querySelectorAll('.don-item'); // Changed from '.nav-item' to '.don-item' to match your HTML
 
-    // Функція для завантаження контенту
+    // Function to load content
     function loadContent(page) {
         fetch(page)
             .then(response => {
@@ -15,45 +11,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 return response.text();
             })
             .then(data => {
-                document.getElementById('content').innerHTML = data;
+                document.getElementById('contents').innerHTML = data; // Changed from 'content' to 'contents' to match your HTML
             })
             .catch(error => {
                 console.error('Error loading content:', error);
             });
     }
 
-    function setActiveButtonDefault() {
-        // Спочатку прибираємо клас "active" з усіх кнопок
+    // Function to set active button
+    function setActiveButton(event) {
+        // Remove active class from all buttons
         navItems.forEach(item => item.classList.remove('active'));
         
-        // Додаємо клас "active" до кнопки "Home"
-        const homeButton = navItems[0];
-        homeButton.classList.add('active');
-    }
-
-    // Функція для встановлення активної кнопки
-    function setActiveButton(Event) {
-        // Спочатку прибираємо клас "active" з усіх кнопок
-        navItems.forEach(item => item.classList.remove('active'));
-        
-        // Додаємо клас "active" до натиснутої кнопки
+        // Add active class to the clicked button
         event.currentTarget.classList.add('active');
     }
 
-    // Додаємо обробник подій для кожної кнопки
+    // Add event listener to each button
     navItems.forEach(item => {
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function(event) {
             const page = item.getAttribute('data-target');
             loadContent(page);
-            setActiveButton(Event); // Встановлюємо активну кнопку
+            setActiveButton(event); // Set active button
         });
     });
 
-    // Завантажуємо домашню сторінку за замовчуванням
-    
+    // Load default page
     loadContent('donate/donate.html');
-    setActiveButtonDefault()
-    
+
     // Function to get URL parameters
     function getUrlParams() {
         const currentUrl = new URL(window.location.href);
@@ -78,7 +63,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call the updateProgressBars function when the page loads
     window.addEventListener('load', updateProgressBars);
 });
-
-
-
-
