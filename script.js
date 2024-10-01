@@ -1,9 +1,7 @@
 // script.js
 
-
 document.addEventListener('DOMContentLoaded', function() {
-    const navItems = document.querySelectorAll('.nav-item');
-    
+    const navItems = document.querySelectorAll('.nav-item', );
 
     // Функція для завантаження контенту
     function loadContent(page) {
@@ -16,6 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(data => {
                 document.getElementById('content').innerHTML = data;
+    
+                // Замінюємо розширення на .js і підключаємо скрипт
+                const jsFile = page.replace('.html', '.js');
+                const script = document.createElement('script');
+                script.src = jsFile;
+                document.body.appendChild(script);
+    
+                // Оновлюємо прогрес-бари на основі параметрів URL
+                const { vicPercentage, uahPercentage } = getUrlParams();
+                const vicProgress = document.getElementById('vic-progress');
+                const uahProgress = document.getElementById('uah-progress');
+    
+                if (vicProgress && uahProgress) {
+                    vicProgress.style.width = vicPercentage + '%';
+                    uahProgress.style.width = uahPercentage + '%';
+                }
             })
             .catch(error => {
                 console.error('Error loading content:', error);
@@ -23,38 +37,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function setActiveButtonDefault() {
-        // Спочатку прибираємо клас "active" з усіх кнопок
         navItems.forEach(item => item.classList.remove('active'));
-        
-        // Додаємо клас "active" до кнопки "Home"
         const homeButton = navItems[0];
         homeButton.classList.add('active');
     }
 
     // Функція для встановлення активної кнопки
-    function setActiveButton(Event) {
-        // Спочатку прибираємо клас "active" з усіх кнопок
+    function setActiveButton(event) {
         navItems.forEach(item => item.classList.remove('active'));
-        
-        // Додаємо клас "active" до натиснутої кнопки
         event.currentTarget.classList.add('active');
     }
 
-    // Додаємо обробник подій для кожної кнопки
     navItems.forEach(item => {
         item.addEventListener('click', function() {
             const page = item.getAttribute('data-target');
             loadContent(page);
-            setActiveButton(Event); // Встановлюємо активну кнопку
+            setActiveButton(event);
         });
     });
+    loadContent('daily/daily.html');
+    // loadContent('home/home.html');
+    // loadContent('donate/donate.html');
+    setActiveButtonDefault();
 
-    // Завантажуємо домашню сторінку за замовчуванням
-    
-    loadContent('donate/donate.html');
-    setActiveButtonDefault()
-    
-    // Function to get URL parameters
     function getUrlParams() {
         const currentUrl = new URL(window.location.href);
         const urlParams = new URLSearchParams(currentUrl.search);
@@ -64,21 +69,19 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // Function to update progress bars
     function updateProgressBars() {
         const { vicPercentage, uahPercentage } = getUrlParams();
-
         const vicProgress = document.getElementById('vic-progress');
         const uahProgress = document.getElementById('uah-progress');
 
-        vicProgress.style.width = vicPercentage + '%';
-        uahProgress.style.width = uahPercentage + '%';
+        if (vicProgress && uahProgress) {
+            vicProgress.style.width = vicPercentage + '%';
+            uahProgress.style.width = uahPercentage + '%';
+        }
     }
 
-    // Call the updateProgressBars function when the page loads
     window.addEventListener('load', updateProgressBars);
 });
-
 
 
 

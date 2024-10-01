@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap'); /* Підключаємо шрифт Montserrat */
+
+body {
+    background-color: #1A103C;
+    font-family: 'Montserrat', Arial, sans-serif; /* Використовуємо Montserrat як основний шрифт */
+    color: white;
+    margin: 19px;
+    padding: 20px;
+}
+
+.daily-item {
+    margin-top: 1px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 10pt;
+    color: aliceblue;
+}
+
+.container1, .container2 {
+    margin: 1px;
+    padding: 10px;
+    max-height: 150px;
+    /* Додаємо вертикальну прокрутку, якщо вміст перевищує висоту */
+   
+    border-radius: 6px; /* Закруглені краї */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь для стилю */
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt; /* Збільшуємо розмір шрифту для заголовку */
+    margin-bottom: 10px;
+    text-align: center; /* Центруємо текст заголовку */
+    color: aliceblue;
+}
+
+.reward, .task {
+    background-color: #5A5A5A;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 14pt; /* Вирівняно розмір шрифту */
+    min-height: 40px; /* Додаємо мінімальну висоту, щоб уникнути стиснення */
+    cursor: pointer; /* Додаємо курсор для індикації можливості взаємодії */
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    background-color: #444; /* Фон для завдань */
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.task i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffd700; /* Додаємо кольорову іконку */
+}
+
+.task span {
+    flex-grow: 1;
+    font-size: 12pt; /* Зменшуємо трохи розмір шрифту для кращого вигляду */
+}
+
+/* Додаємо стилі для анімації при натисканні на елементи */
+.reward:hover, .task:hover {
+    background-color: #707070;
+    transition: background-color 0.3s ease;
+}
+

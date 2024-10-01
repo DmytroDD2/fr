@@ -10,14 +10,32 @@
     
 }
 
-/* #close-button {
-    color: aliceblue;
+
+
+#close-button {
+    background-color: #4D4D4D ; /* Set the background color to black */
+    color: #fff;
+    border: none;
+    border-radius: 50%; 
+    z-index: 10000;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 80px;
     font-size: 24px;
     cursor: pointer;
-} */
+    display: none;
+    
+}
+
+
+#overlay-container.active #close-button {
+    display: block; /* show the close button when overlay is active */
+}
+
+#close-button:active {
+    transform: scale(0.9); /* Зменшуємо кнопку на 10% при натисканні */
+    background-color: #333333; /* Зміна фону на сірий під час натискання */
+}
 
 /* #overlay-container {
     position: absolute;
@@ -34,7 +52,6 @@
     top: 95px; /* Відстань від верху сторінки */
     left: 0px;
     right: 0;
-    border-radius: 50%;
     margin: 0 auto; /* Центрування навігації */
     width: 90%; /* Збільшена ширина для більш зручного розташування на екрані */
     height: 55px; /* Збільшена висота для зручності */
@@ -47,9 +64,11 @@
     border-radius: 10px; /* Округлені кути */
     place-items: center; 
     column-gap: 35px;
+    
 }
 
 .don-item {
+    
     background-color: #4D4D4D ;
     /* background-image: url("donate_png/Button for donates.png") ; */
     max-width: 90px;
@@ -79,7 +98,12 @@
 
   /* Adjust styles for mobile devices */
   @media (max-width: 480px) {
-    .dontae-item{
+    .donate_nav{
+        position: flex;
+        
+    }
+        
+    .donate-item{
         font-size: 15pt;
     }
    
@@ -93,11 +117,19 @@
         overflow: hidden;
         
     }
+    
+    #close-button{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        
+
+    }
   }
   
   /* Adjust styles for tablets */
   @media (min-width: 481px) and (max-width: 768px) {
-    .dontae-item{
+    .donate-item{
         font-size: 15pt;
     }
    
@@ -109,6 +141,14 @@
         height: 82px;
         width: 82px;
         overflow: hidden;
+    }
+
+    #close-button{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        
+
     }
   }
 

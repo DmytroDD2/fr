@@ -1,65 +1,62 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navItems = document.querySelectorAll('.don-item'); // Changed from '.nav-item' to '.don-item' to match your HTML
+window.initializeDonate = function() {
+    const donateItems = document.querySelectorAll('.don-item');
+    const contentContainer = document.getElementById('contents');
+    const overlayContainer = document.getElementById('overlay-container');
+    const overlayContent = document.getElementById('overlay-content');
+    const closeButton = document.getElementById('close-button');
 
-    // Function to load content
-    function loadContent(page) {
-        fetch(page)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok.');
-                }
-                return response.text();
-            })
+    // Закриття модального вікна
+    closeButton.addEventListener('click', () => {
+        overlayContainer.style.display = 'none';
+        overlayContent.innerHTML = ''; // Очищуємо контент модального вікна
+    });
+
+    // Додаємо подію кліку на кожен донат-елемент
+    donateItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            
+            // Якщо шлях містить "modal", відкриваємо модальне вікно
+            if (target.includes('modal')) {
+                overlayContainer.style.display = 'block'; // Показуємо модальне вікно
+                loadContent(target, overlayContent); // Завантажуємо контент у модальне вікно
+            } else {
+                // В іншому випадку завантажуємо контент в основну частину сторінки
+                loadContent(target, contentContainer);
+            }
+
+            // Додаємо клас активності до натиснутого елемента
+            donateItems.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+            document.getElementById('overlay-container').classList.add('active');
+        });
+        
+    });
+
+    // Функція для завантаження контенту
+    function loadContent(url, container) {
+        fetch(url)
+            .then(response => response.text())
             .then(data => {
-                document.getElementById('contents').innerHTML = data; // Changed from 'content' to 'contents' to match your HTML
+                container.innerHTML = data; // Завантажуємо контент у вказаний контейнер
+                executeScripts(container);  // Викликаємо скрипти після завантаження
             })
             .catch(error => {
                 console.error('Error loading content:', error);
+                container.innerHTML = '<p>Error loading content.</p>';
             });
     }
 
-    // Function to set active button
-    function setActiveButton(event) {
-        // Remove active class from all buttons
-        navItems.forEach(item => item.classList.remove('active'));
-        
-        // Add active class to the clicked button
-        event.currentTarget.classList.add('active');
-    }
-
-    // Add event listener to each button
-    navItems.forEach(item => {
-        item.addEventListener('click', function(event) {
-            const page = item.getAttribute('data-target');
-            loadContent(page);
-            setActiveButton(event); // Set active button
+    // Функція для виконання скриптів, які завантажені динамічно
+    function executeScripts(container) {
+        const scripts = container.querySelectorAll('script');
+        scripts.forEach(script => {
+            const newScript = document.createElement('script');
+            newScript.textContent = script.textContent;
+            document.body.appendChild(newScript).parentNode.removeChild(newScript); // Додаємо та видаляємо скрипт для його виконання
         });
-    });
-
-    // Load default page
-    loadContent('donate/donate.html');
-
-    // Function to get URL parameters
-    function getUrlParams() {
-        const currentUrl = new URL(window.location.href);
-        const urlParams = new URLSearchParams(currentUrl.search);
-        return {
-            vicPercentage: urlParams.get('vicPercentage'),
-            uahPercentage: urlParams.get('uahPercentage')
-        };
     }
+};
 
-    // Function to update progress bars
-    function updateProgressBars() {
-        const { vicPercentage, uahPercentage } = getUrlParams();
-
-        const vicProgress = document.getElementById('vic-progress');
-        const uahProgress = document.getElementById('uah-progress');
-
-        vicProgress.style.width = vicPercentage + '%';
-        uahProgress.style.width = uahPercentage + '%';
-    }
-
-    // Call the updateProgressBars function when the page loads
-    window.addEventListener('load', updateProgressBars);
-});
+// Ініціалізуємо події при завантаженні сторінки
+window.initializeDonate();

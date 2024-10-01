@@ -1,4 +1,47 @@
-
-<h1>Daily Page</h1>
-<h1>sfdasfasdf</h1>
-<p>Welcome to the Daily Page!</p>
+<html>
+<head>
+    <link rel="stylesheet" href="daily/daily_style.css">
+</head>
+<body>
+    <div class="container1">
+        <div class="section-title">Rewards</div>
+        
+        <!-- Перша нагорода -->
+        <div class="reward" onclick="loadHtmlContent(this, 'donate/modal/modal.html')">
+            Donate reward
+            <i class="fas fa-chevron-down chevron"></i>
+            <div class="content"></div>
+        </div>
+        
+        <!-- Друга нагорода -->
+        <div class="reward" onclick="loadHtmlContent(this, 'daily.html')">
+            Daily reward
+            <i class="fas fa-chevron-down chevron"></i>
+            <div class="content"></div>
+        </div>
+    </div>
+    <h1 class="daily-item">Daily</h1>
+    
+    <div class="container2">
+        <div class="section-title">Task list</div>
+        <div class="task">
+            <i class="fab fa-facebook"></i>
+            <span>Task...</span>
+            <span>+ 00,00 VC</span>
+        </div>
+        <div class="task">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="task">
+            <i class="fab fa-telegram"></i>
+        </div>
+        <div class="task">
+            <i class="fab fa-xing"></i>
+        </div>
+        <div class="task">
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

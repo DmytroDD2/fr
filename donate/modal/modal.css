@@ -1,0 +1,96 @@
+
+
+/* Основні стилі для модального вікна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999; /* Set a very high z-index to ensure it overlays all other elements */
+  left: 50%; /* Center horizontally */
+  bottom: 50px; /* Position from the bottom */
+  transform: translate(-50%, 0); /* Adjust the position to center the modal horizontally */
+  width: 95%;
+  height: 90%;
+  background-image: url('/Background-VIC.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    height: 89%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+   /* Вищий за фоновий елемент модального вікна */
+}
+
+
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+  @media (max-width: 480px) {
+    .modal {
+      
+      
+
+      
+      position: absolute; /* Фіксуємо модальне вікно на екрані */
+      top: 10px; /* Відступ зверху */
+      
+      max-width: 300px;
+    
+      max-height: 90vh; /* Максимальна висота 90% від висоти екрану */
+      border-radius: 8px;
+      
+  }
+   
+
+    .modal-content{
+        
+        
+        
+      
+        
+    }
+  }
+  
+  /* Adjust styles for tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .modal {
+      width: 300px;
+      bottom: 40px;
+      background-color: rgb(1, 13, 23);
+      overflow: hidden;
+   }
+  
+
+   .modal-content{
+       
+       
+       
+     
+       
+   }
+  }
