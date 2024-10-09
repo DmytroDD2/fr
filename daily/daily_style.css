@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap'); /* Підключаємо шрифт Montserrat */
 
 body {
-    background-color: #1A103C;
     font-family: 'Montserrat', Arial, sans-serif; /* Використовуємо Montserrat як основний шрифт */
     color: white;
-    margin: 19px;
-    padding: 20px;
+    margin: 20px;
+   
+    
 }
+
+
+  
+.modal {
+    display: none;
+  }
+ 
+
 
 .daily-item {
     margin-top: 1px;
@@ -20,22 +28,26 @@ body {
     margin: 1px;
     padding: 10px;
     max-height: 150px;
-    /* Додаємо вертикальну прокрутку, якщо вміст перевищує висоту */
    
     border-radius: 6px; /* Закруглені краї */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь для стилю */
 }
 
-.section-title {
+
+.section-title1, .section-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt; /* Збільшуємо розмір шрифту для заголовку */
-    margin-bottom: 10px;
-    text-align: center; /* Центруємо текст заголовку */
+    margin-bottom: 1px;
+    text-align: left; /* Центруємо текст заголовку */
     color: aliceblue;
+
+}
+.container2{
+    margin-top: 20px;
 }
 
 .reward, .task {
-    background-color: #5A5A5A;
+    background-color: #444;
     border-radius: 4px;
     padding: 15px;
     margin-bottom: 20px;
@@ -73,3 +85,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.img_daily{
+    width: 40px;
+    height: 40px; 
+}
+
+.img_daily_f{
+    width: 20px;
+    height: 40px;
+}

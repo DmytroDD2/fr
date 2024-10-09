@@ -1,4 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="report/report.css">
+</head>
+<body class="body-class">
+    <h1 class="friends-item">History of donates</h1>
+    
+    
+    <h2 class="first-h">User history</h2> 
+    <div class="history-cont">
+        
+    </div>
+    
 
-<h1>Report Page</h1>
-<h1>sfdasfasdf</h1>
-<p>Welcome to the Report Page!</p>
+    <div class="container1">
+        <div class="section-title1">Rewards</div>
+        
+        <!-- Перша нагорода -->
+        <div class="task" onclick="openModal('daily/donate_reward/donate_reward.html')">
+            Donate reward
+        </div>
+        
+        <!-- Друга нагорода -->
+        <div class="task" onclick="openModal('daily/daily_reward/daily_reward.html')">
+            Daily reward
+        </div>
+    </div>
+
+    
+    <div id="modal" class="modal"> 
+        <div class="modal-content-daily">
+            <div class="bottom-title-daily">
+                <h2 class="title-daily"></h2>
+                <button id="close-button-daily" class="close-button-daily">&times;</button>
+            </div>
+            <div id="modal-report">
+                <!-- Сюди буде завантажено HTML вміст -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

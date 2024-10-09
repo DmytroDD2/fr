@@ -1,5 +1,51 @@
+function initializeModalAndCopy() {
+    const modal = document.getElementById('modal');
+    const button = document.querySelector('.button_down');
+    const closeButton = document.getElementById('close-button-daily');
+    const copyLinkButton = document.querySelector('.button-cop');
+
+    // Ініціалізація модального вікна
+    if (button && modal && closeButton) {
+        button.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
+
+    // Ініціалізація функції копіювання
+    if (copyLinkButton) {
+        copyLinkButton.addEventListener('click', () => {
+            const linkToCopy = 'I toot Vainia'; // Замінити на ваш текст для копіювання
+            const tempInput = document.createElement('input');
+            tempInput.value = linkToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Зміна тексту кнопки і кольору
+            copyLinkButton.textContent = 'Link copied!';
+            copyLinkButton.style.backgroundColor = '#333';
+
+            setTimeout(() => {
+                copyLinkButton.textContent = 'Copy link';
+                copyLinkButton.style.backgroundColor = ''; // Відновлення кольору фону
+                copyLinkButton.style.color = ''; // Відновлення кольору тексту
+            }, 2000);
+        });
+    }
+}
+
+// Викликаємо функцію при завантаженні сторінки
+initializeModalAndCopy();
+
+
 // Функція для отримання параметрів з URL
 function getURLParams() {
+    
     const params = new URLSearchParams(window.location.search);
     return Object.fromEntries(params.entries());
 }
@@ -7,6 +53,7 @@ function getURLParams() {
 // Функція для динамічного створення елементів на основі параметрів
 function populateData() {
     const params = getURLParams();
+    
     const container = document.getElementById('data-container');
     
     // Змінні для лічильників рівнів
@@ -38,6 +85,8 @@ function populateData() {
         // Збільшуємо індекс для наступного рівня
         levelIndex++;
     }
+
+    
 }
 
 // Викликаємо функцію для заповнення даних

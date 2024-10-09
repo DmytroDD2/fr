@@ -1,0 +1,117 @@
+.don-modal-content-rew {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      max-width: 500px;
+      text-align: center;
+      position: relative;
+      
+  }
+.title-daily:before {
+    content: "Donate reward";
+  }
+  
+.bottom-title {
+    width: 100%; /* Займає всю ширину сторінки */
+    background-color: #707070;
+    position: fixed; /* Фіксує елемент у верхній частині вікна */
+    top: 0; /* Розміщує елемент у самому верху */
+    left: 0; /* Вирівнює по лівому краю */
+    z-index: 1000; /* Забезпечує, що елемент буде поверх інших елементів */
+    margin: 0; /* Забираємо будь-які зовнішні відступи */
+    padding: 10px; /* Можеш додати padding для внутрішніх відступів */
+    text-align: center; /* Вирівнюємо текст по центру, якщо потрібно */
+
+
+  }
+
+
+
+
+  
+
+.task-reward  {
+    margin-top: 30px;
+    background-color: #888;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 14pt; /* Вирівняно розмір шрифту */
+    min-height: 40px; /* Додаємо мінімальну висоту, щоб уникнути стиснення */
+    cursor: pointer; /* Додаємо курсор для індикації можливості взаємодії */
+    
+
+}
+
+
+
+.task-reward span:first-child {
+  text-align: left;
+}
+
+.task-reward span:last-child {
+  text-align: right;
+}
+
+.task-reward span {
+    flex-grow: 1;
+    font-size: 12pt; /* Зменшуємо трохи розмір шрифту для кращого вигляду */
+}
+  
+  
+  
+  
+  
+  
+  
+    @media (max-width: 480px) {
+      .modal {
+        
+        
+  
+        
+        position: absolute; /* Фіксуємо модальне вікно на екрані */
+        top: 10px; /* Відступ зверху */
+        
+        max-width: 300px;
+      
+        max-height: 90vh; /* Максимальна висота 90% від висоти екрану */
+        border-radius: 8px;
+        
+    }
+     
+  
+      .modal-content{
+          
+          
+          
+        
+          
+      }
+    }
+    
+    /* Adjust styles for tablets */
+    @media (min-width: 481px) and (max-width: 768px) {
+      .modal {
+        width: 300px;
+        bottom: 40px;
+        background-color: rgb(1, 13, 23);
+        overflow: hidden;
+     }
+    
+  
+     .modal-content{
+         
+         
+         
+       
+         
+     }
+    }
+  

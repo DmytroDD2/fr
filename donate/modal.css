@@ -6,10 +6,11 @@
   position: fixed;
   z-index: 9999; /* Set a very high z-index to ensure it overlays all other elements */
   left: 50%; /* Center horizontally */
-  bottom: 50px; /* Position from the bottom */
+  top: 80px;
+  bottom: 0px;
   transform: translate(-50%, 0); /* Adjust the position to center the modal horizontally */
-  width: 95%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background-image: url('/Background-VIC.svg');
   display: flex;
   justify-content: center;
@@ -28,6 +29,73 @@
    /* Вищий за фоновий елемент модального вікна */
 }
 
+.bottom-title-daily {
+  margin: 0;
+  position: absolute;
+  background-color: #888;
+  height: 40px;
+  padding: 0;
+  width: 100%;
+  text-align: right; /* Вирівнюємо текст вправо */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Вирівнюємо контент вправо */
+  margin-top: -20px;
+  margin-left: -20px; /* Додаємо трохи внутрішнього відступу з правого боку */
+}
+
+ 
+.title-daily{
+  flex: 1;
+  text-align: center;
+  /* margin-left: 168px; */
+}
+
+
+
+
+ 
+  /* Modal Content styles */
+  .modal-content-daily {
+   
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 100%;
+    
+}
+  
+  /* Close button styles */
+.close-button-daily {
+  background-color: transparent;
+  color: #f6f5f5;
+  font-size: 50px;
+  border: none;
+}
+
+
+
+  
+  
+  .close-button-daily:hover,
+  .close-button-daily:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    
+    
+  }
+  
+  /* Bottom title styles */
+
+  
+  #modal-body {
+    padding: 20px;
+  }
+
+.bottom-title * {
+  display: inline;
+}
 
 
 

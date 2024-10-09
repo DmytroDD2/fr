@@ -1,0 +1,26 @@
+.title-daily:before {
+    content: "Charging systems";
+  }
+
+
+.charging_sys_centr {
+    display: flex;
+    flex-direction: column; /* stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -15px;
+}
+
+
+
+.charging_sys h1{
+    margin-left: -700px;
+}
+
+
+.charging_sys img {
+    width: 400px;
+    height: 400px;
+}

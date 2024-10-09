@@ -102,7 +102,7 @@ button {
 
 .data-container, .data-container5{
     margin-top: 10px;
-    background-color: #4B5563; 
+    background-color: #4D4D4D; 
     border-radius: 2%;
     padding: 10px;
     overflow-y: auto;
@@ -125,7 +125,7 @@ button {
     transform: translateX(-50%);
     width: 460px;  /* Задаємо ширину лінії відносно контейнера */
     height: 3px; /* Товщина лінії */
-    background-color: #9CA3AF; /* Колір лінії */
+    background-color: #4D4D4D; /* Колір лінії */
 }
 
 
@@ -136,7 +136,7 @@ button {
  
 /* Список друзів */
 div.bg-gray-600 {
-    background-color: #4B5563;
+    background-color: #4D4D4D;
     padding: 16px;
     border-radius: 1%;
     display: flex;
@@ -210,7 +210,7 @@ div.text-center {
 
 /* Кнопка запрошення */
 button.bg-gray-600 {
-    background-color: #4B5563;
+    background-color: #4D4D4D;
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
@@ -219,7 +219,7 @@ button.bg-gray-600 {
 }
 
 .button_down {
-    background-color: #4B5563;
+    background-color: #4D4D4D;
     color: white;
     display: flex;
     justify-content: center; /* Вирівнювання по горизонталі */
@@ -233,11 +233,92 @@ button.bg-gray-600 {
     
 }
 
+.bottom-title-daily {
+    
+    margin-top: -134px;
+  }
+
+.close-button-daily {
+    margin-bottom: 15px;
+    margin-right: -15px;
+  }
+
+
+
+
+
+.button_down:active { 
+    background-color: #333333; /* Можна змінити колір для активної кнопки */
+    
+}
+
 #button_down{
     transform: scale(0.9); /* Зменшуємо кнопку на 10% при натисканні */
     background-color: #333333; /* Зміна фону на сірий під час натискання */
 }
 
+.ivite-content {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    height: 10vh;
+    padding-bottom: 70px;
+
+   
+}
+
+.qr-code {
+    position: fixed; /* fix the container to the bottom of the screen */
+    top: 90px; /* set the bottom property to 0 */
+    left: 50%; /* center the container horizontally */
+    transform: translateX(-50%); /* center the container horizontally */
+    max-width: 50%; /* set the maximum width to 50% */
+    max-height: 21.5rem; /* set the maximum height to 21.5rem */
+    margin: auto; /* center the container horizontally */
+    border-radius: 10px; /* add a border radius */
+    padding: 1rem; /* add some padding */
+    box-shadow: 2px 2px 10px grey; /* add a box shadow */
+}
+
+.qr-code img {
+    width: 100; /* set the image width to 100% of the container */
+    height: 100%; /* set the image height to 100% of the container */
+    object-fit: cover; /* resize the image to fit the container */
+    border-radius: 10px; /* add a border radius to the image */
+}
+
+.buttons {
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed; /* fix the container to the bottom of the screen */
+    bottom: 90px; /* set the bottom property to 0 */
+    
+}
+
+/* .button-cop:active  {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  } */
+
+
+
+
+.button, .button-cop {
+    width: 200px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #4A4A4A;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 8px;
+}
 
 
  /* Adjust styles for mobile devices */

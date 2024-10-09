@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap'); /* Підключаємо шрифт Montserrat */
+.friends-item{
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
+    text-align: center;
+    font-size: 40pt;
+    color: rgb(238, 241, 243);
+    
+}
+
+body.body-class {
+    font-size: 15px;
+    color: #333; /* Changed text color to dark gray */
+    margin: 50px;
+    background-color: aliceblue;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+
+h2 {
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    font-size: 10pt;
+    margin-bottom: 0;
+}
+
+.history-cont{
+    background-color: #444;
+    min-width: 90vh;
+    min-height: 40vh;
+    border-radius: 3%;
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
