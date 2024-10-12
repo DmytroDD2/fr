@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
             setActiveButton(event);
         });
     });
-    loadContent('report/report.html');
+    // loadContent('report/report.html');
     // loadContent('home/home.html');
-    // loadContent('donate/donate.html');
+    loadContent('donate/donate.html');
     setActiveButtonDefault();
 
     function getUrlParams() {

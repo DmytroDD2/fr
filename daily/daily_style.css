@@ -28,18 +28,19 @@ body {
     margin: 1px;
     padding: 10px;
     max-height: 150px;
-   
-    border-radius: 6px; /* Закруглені краї */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь для стилю */
 }
+.text{
+    margin-left: 2px;
+}
 
-
-.section-title1, .section-title {
+.section-title1, .section-title2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt; /* Збільшуємо розмір шрифту для заголовку */
     margin-bottom: 1px;
     text-align: left; /* Центруємо текст заголовку */
     color: aliceblue;
+    margin-left: 10px;
 
 }
 .container2{
@@ -48,7 +49,6 @@ body {
 
 .reward, .task {
     background-color: #444;
-    border-radius: 4px;
     padding: 15px;
     margin-bottom: 20px;
     display: flex;
@@ -56,7 +56,7 @@ body {
     justify-content: space-between;
     color: white;
     font-size: 14pt; /* Вирівняно розмір шрифту */
-    min-height: 40px; /* Додаємо мінімальну висоту, щоб уникнути стиснення */
+    height: 40px; /* Додаємо мінімальну висоту, щоб уникнути стиснення */
     cursor: pointer; /* Додаємо курсор для індикації можливості взаємодії */
 }
 
@@ -65,7 +65,7 @@ body {
     align-items: center;
     background-color: #444; /* Фон для завдань */
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 5%;
     width: 85vh;
 }
 
@@ -94,4 +94,57 @@ body {
 .img_daily_f{
     width: 20px;
     height: 40px;
+}
+
+
+@media (max-width: 480px) {
+    
+    body {
+        margin: 10px; /* Зменшення загальних відступів */
+    }
+    .container2{
+        margin-top: -15px;
+    }
+
+
+    .reward, .task {
+        width: 270px; 
+        font-size: 12pt; /* Зменшення розміру шрифту */
+        padding: 10px; /* Менший відступ всередині елементів */
+        height: 15px; /* Зменшення висоти елементів */
+    }
+    .reward{
+        padding: 100px;
+    }
+
+    .section-title1, .section-title {
+        font-size: 10pt; /* Зменшення розміру шрифту для заголовків */
+    }
+
+    .img_daily {
+        width: 23px;
+        height: 23px;
+    }
+
+    .img_daily_f {
+        width: 15px;
+        height: 25px;
+    }
+    .arrow{
+        right: 15px;
+        transform: rotate(270deg) scale(1.1);
+    }
+    .modal{
+        top: 55px;
+    }
+    .bottom-title-daily {
+        left: 5px;
+        margin-top: -70px;
+
+      }
+      .close-button-daily {
+        margin-right: 7px;
+      }
+   
+
 }

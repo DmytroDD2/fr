@@ -4,6 +4,7 @@
 
 
 .charging_sys_centr {
+
     display: flex;
     flex-direction: column; /* stack elements vertically */
     justify-content: center;
@@ -11,6 +12,7 @@
     margin: 0;
     padding: 0;
     margin-top: -15px;
+    
 }
 
 
@@ -24,3 +26,55 @@
     width: 400px;
     height: 400px;
 }
+
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    
+    .charging_sys_centr {
+        height: 180px;
+      
+    }
+
+    .charging_sys h1 {
+    }
+    .charging_sys img {
+        margin-top: -30px;
+        width: 250px;
+        height: 250px;
+
+    }
+    .info{
+        font-size: 15px;
+        
+        margin-right: -430px;
+    }
+    .donate-button{
+        bottom: 150px;
+    }
+  }
+  
+  /* For tablets (min-width: 481px and max-width: 768px) */
+  @media (max-width: 768px) {
+    .charging_sys_centr {
+        height: 180px;
+      
+    }
+
+    .charging_sys h1 {
+    }
+    .charging_sys img {
+        margin-top: -30px;
+        width: 250px;
+        height: 250px;
+
+    }
+    .info{
+        font-size: 15px;
+        
+        margin-right: -430px;
+    }
+    .donate-button{
+        bottom: 150px;
+    }
+  }

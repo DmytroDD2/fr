@@ -30,8 +30,8 @@
 
 .history-cont{
     background-color: #444;
-    min-width: 90vh;
-    min-height: 40vh;
+    width: 90vh;
+    height: 40vh;
     border-radius: 1%;
     overflow-y: auto;
     /* для всіх браузерів */
@@ -134,3 +134,22 @@
 
 
 .modal{display: none;}
+
+
+
+@media only screen and (max-width: 480px) {
+    .friends-item {
+      font-size: 24pt; /* Reduce font size for mobile */
+      margin-top: 20px; /* Adjust margin for mobile */
+    }
+    
+    .cont-of-don {
+      height: 40vh; /* Adjust height for mobile */
+      padding: 2vh; /* Adjust padding for mobile */
+    }
+    
+    .history-cont {
+      max-width: 310px; /* Adjust minimum width for mobile */
+      max-height: 100px;
+    }
+  }

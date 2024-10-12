@@ -302,7 +302,6 @@ button.bg-gray-600 {
 }
 
 .ivite-content {
-   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +317,7 @@ button.bg-gray-600 {
     top: 90px; /* set the bottom property to 0 */
     left: 50%; /* center the container horizontally */
     transform: translateX(-50%); /* center the container horizontally */
-    max-width: 50%; /* set the maximum width to 50% */
+    max-width: 80%; /* set the maximum width to 50% */
     max-height: 21.5rem; /* set the maximum height to 21.5rem */
     margin: auto; /* center the container horizontally */
     border-radius: 10px; /* add a border radius */
@@ -327,7 +326,7 @@ button.bg-gray-600 {
 }
 
 .qr-code img {
-    width: 100; /* set the image width to 100% of the container */
+    width: 100%; /* set the image width to 100% of the container */
     height: 100%; /* set the image height to 100% of the container */
     object-fit: cover; /* resize the image to fit the container */
     border-radius: 10px; /* add a border radius to the image */
@@ -340,13 +339,6 @@ button.bg-gray-600 {
     bottom: 90px; /* set the bottom property to 0 */
     
 }
-
-/* .button-cop:active  {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  } */
 
 
 
@@ -376,10 +368,8 @@ button.bg-gray-600 {
     
         padding: 10px;
         overflow-y: auto;
-        max-height: 200px;
         position: relative;
         max-height: 100px; /* Максимальна висота контейнера */
-        
         max-width: 310px;
         margin-top: 55px;
         
@@ -418,12 +408,7 @@ button.bg-gray-600 {
     }
 
 
-    /* h2 {
-        margin-top: -2px;
-        left: 21px;
-        font-size: 10pt;
-
-    } */
+  
 
     div.bg-gray-600 {
         background-color: #4B5563;
@@ -456,6 +441,44 @@ button.bg-gray-600 {
     .pr-ref{
         margin-top: -21px;
     }
+    .bottom-title-daily {
+    
+        margin-top: -30px;
+      }
+      .title-daily {
+        margin-left: 40px;
+    }
+
+   
+    .qr-code{
+        height: 220px;
+        width: 220px;
+        background-color: aliceblue;
+        top: 40px;
+    }
+    .close-button-daily {
+        margin-right: 1px;
+        
+    }
+    
+
+    .buttons{
+    
+    }
+
+    .button-cop, .button{
+       margin-top: 0;
+     
+        padding: 10px 10px 5px 20px; /* Менший відступ зверху, більший знизу */
+        text-align: center;
+        display: inline-block;
+      
+        font-size: 16px;
+        cursor: pointer;
+        height: 25px;
+        width: 180px;
+    }
+   
    
   }
   
@@ -483,3 +506,5 @@ button.bg-gray-600 {
 
     }
   }
+  
+

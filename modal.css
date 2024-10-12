@@ -119,35 +119,77 @@
 
 
 
-  @media (max-width: 480px) {
-    .modal {
-      
-      
+/* Для планшетів і малих екранів (ширина до 768px) */
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    width: 95%; /* Майже повна ширина на телефонах */
+    height: 75%; /* Ще більше зменшуємо висоту */
+    max-width: none; /* Відключаємо максимальну ширину */
+}
 
-      
-      position: absolute; /* Фіксуємо модальне вікно на екрані */
-      top: 10px; /* Відступ зверху */
-      
-      max-width: 300px;
-    
-      max-height: 90vh; /* Максимальна висота 90% від висоти екрану */
-      border-radius: 8px;
-      
-  }
-   
+.modal {
+  height: 100%;
+    top: 90px; /* Зменшуємо відстань від верху на телефонах */
+}
 
-  
-  }
-  
-  /* Adjust styles for tablets */
-  @media (min-width: 481px) and (max-width: 768px) {
-    .modal {
-      width: 300px;
-      bottom: 40px;
-      background-color: rgb(1, 13, 23);
-      overflow: hidden;
-   }
-  
+.modal-content-daily {
+    margin: 5% auto;
+    padding: 10px;
+    width: 95%;
+    height: 75%;
+}
 
-  
+.close-button-daily {
+    margin-right: 1px;
+    font-size: 35px; /* Ще більше зменшуємо розмір кнопки закриття */
+}
+
+.bottom-title-daily {
+  font-size: 10px;
+    height: 30px;
+    margin-top: -69px;
+    margin-left: -5px;
+}
+
+.title-daily {
+    margin-left: 55px;
+}
+}
+
+/* Для телефонів (ширина до 480px) */
+@media only screen and (max-width: 480px) {
+  .modal-content {
+      width: 95%; /* Майже повна ширина на телефонах */
+      height: 75%; /* Ще більше зменшуємо висоту */
+      max-width: none; /* Відключаємо максимальну ширину */
   }
+
+  .modal {
+    height: 100%;
+      top: 90px; /* Зменшуємо відстань від верху на телефонах */
+  }
+
+  .modal-content-daily {
+      margin: 5% auto;
+      padding: 10px;
+      width: 95%;
+      height: 75%;
+  }
+
+  .close-button-daily {
+      margin-right: 1px;
+      font-size: 35px; /* Ще більше зменшуємо розмір кнопки закриття */
+  }
+
+  .bottom-title-daily {
+    font-size: 10px;
+      height: 30px;
+      margin-top: -69px;
+      margin-left: -5px;
+  }
+
+  .title-daily {
+      margin-left: 55px;
+  }
+}
+

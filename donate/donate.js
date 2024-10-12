@@ -24,6 +24,7 @@ window.initializeDonate = function() {
     
                 // Після завантаження HTML обробляємо URL параметри для відображення комбо
                 handleComboDataFromURL();
+                
             })
             .catch(error => console.error('Помилка завантаження HTML:', error));
     }window.initializeDonate = function() {
