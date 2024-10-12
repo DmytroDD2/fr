@@ -66,6 +66,7 @@ body {
     background-color: #444; /* Фон для завдань */
     padding: 10px;
     border-radius: 6px;
+    width: 85vh;
 }
 
 .task i {

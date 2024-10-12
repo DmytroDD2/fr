@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="report/report.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="report/report_style.css">
+    <script type="module" src="report/report.js"></script>
 </head>
 <body class="body-class">
     <h1 class="friends-item">History of donates</h1>
     
-    
-    <h2 class="first-h">User history</h2> 
-    <div class="history-cont">
-        
-    </div>
-    
-
-    <div class="container1">
-        <div class="section-title1">Rewards</div>
-        
-        <!-- Перша нагорода -->
-        <div class="task" onclick="openModal('daily/donate_reward/donate_reward.html')">
-            Donate reward
-        </div>
-        
-        <!-- Друга нагорода -->
-        <div class="task" onclick="openModal('daily/daily_reward/daily_reward.html')">
-            Daily reward
-        </div>
-    </div>
+    <div class="cont-of-don">
 
     
-    <div id="modal" class="modal"> 
+        <div class="history-cont">
+            
+           <h2 class="hist-titl1">User history</h2>
+           <div id="data-history"></div> 
+            <div class="empty">
+                <div class="underlined"></div>
+                <div class="underlined"></div>
+                <div class="underlined"></div>
+                <div class="underlined"></div>
+                <div class="underlined"></div>
+                <div class="underlined"></div>
+            </div>
+            
+        </div>
+
+        <div class="container-rep">
+            <div class="hist-titl2">Vic history</div>
+        
+            <!-- Перша нагорода -->
+            <div class="task" onclick="openModal('daily/donate_reward/donate_reward.html')">
+                <span class="text">Active goals</span>
+                <span class="arrow">&#10094;</span>
+            </div>
+        
+            <!-- Друга нагорода -->
+            <div class="task" onclick="openModal('daily/daily_reward/daily_reward.html')">
+                <span class="text">Achived goals</span>
+                <span class="arrow">&#10094;</span>
+            </div>
+        </div>
+
+    </div>
+    <div id="modal" class="modal">
         <div class="modal-content-daily">
             <div class="bottom-title-daily">
                 <h2 class="title-daily"></h2>
@@ -41,5 +56,6 @@
             </div>
         </div>
     </div>
+    
 </body>
 </html>

@@ -58,18 +58,22 @@ body {
 
 
 
-/* Текст заголовків */
 
 
-h2 {
+.hist-titl{
     position: absolute;
-    top: 220px;
-    left: 20px;
+    margin-top: -25px;
+    margin-left: -10px;
     font-size: 10pt;
-    margin-bottom: 0;
+    
+    
 }
 
-/* Кнопки */
+.title-daily:before {
+    content: "Invite a friend";
+  }
+
+
 button {
     background-color: #4B5563;
     color: white;
@@ -92,7 +96,7 @@ button {
     bottom: 0; /* Лінія по нижньому краю */
     left: 50%; /* Початок лінії з середини */
     transform: translateX(-50%); /* Центрування лінії */
-    width: 460px; /* Задає ширину лінії */
+    width: 95%; /* Задає ширину лінії */
     height: 3px; /* Товщина лінії */
     background-color: #9CA3AF; /* Колір лінії */
    
@@ -100,38 +104,78 @@ button {
 }
 
 
-.data-container, .data-container5{
+.data-container5{
     margin-top: 10px;
     background-color: #4D4D4D; 
     border-radius: 2%;
     padding: 10px;
-    overflow-y: auto;
-    max-height: 200px;
     position: relative;
-    max-height: 150px; /* Максимальна висота контейнера */
-    width: 350px;
-    
+    height: 200px; /* Максимальна висота контейнера */
+    width: 400px;
+       
+}
+#extraCoins {
+    float: right;
+    margin-right: 5px; /* or padding-right: 10px; */
+  }
+
+.data-container{
+    /* background-color: aliceblue; */
+    width: 96%;
+    height: 110px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; 
+    scrollbar-width: thin; /* або narrow, або thin */
+    scrollbar-color: #444 #666; /* колір смужки прокрутки */
+    /* для WebKit */
+    ::-webkit-scrollbar {
+        width: 5px; /* ширина смужки прокрутки */
+        height: 5px; /* висота смужки прокрутки */
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #666; /* колір смужки прокрутки */
+        border-radius: 5px; /* радіус смужки прокрутки */
+    }
     
     
 }
 
+.underlined-fr{
+   
+    display: inline-block;
+    position: relative;
+   
+    margin-left: 20px;
+    width: 51vh; /* Мінімальна ширина для елемента */
+    height: 30px; /* Висота рядка */
+    margin: 5px 0; 
+    
 
+}
 
-.data-container::after {
+/* Підкреслення для порожнього рядка */
+.underlined-fr::after {
     content: "";
     position: absolute;
-    bottom: 4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 460px;  /* Задаємо ширину лінії відносно контейнера */
-    height: 3px; /* Товщина лінії */
-    background-color: #4D4D4D; /* Колір лінії */
+    bottom: 0; /* Підкреслення внизу елемента */
+    left: 0;
+    width: 100%;
+    height: 4px; /* Товщина підкреслення */
+    background-color: #9CA3AF; /* Колір підкреслення */
+}
+
+.emptyt {
+    margin-bottom: 15px;
+  
+    margin-right: 13px;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.data-container5::-webkit-scrollbar {
-    width: 1px; /* Reduce the width of the scrollbar */
-}
 
  
 /* Список друзів */
@@ -321,6 +365,10 @@ button.bg-gray-600 {
 }
 
 
+.modal{
+    display: none;
+}
+
  /* Adjust styles for mobile devices */
  @media (max-width: 480px) {
     .data-container, .data-container5{
@@ -368,14 +416,14 @@ button.bg-gray-600 {
         width: 240px;
     
     }
-    
 
-    h2 {
-        top: 250px;
+
+    /* h2 {
+        margin-top: -2px;
         left: 21px;
         font-size: 10pt;
 
-    }
+    } */
 
     div.bg-gray-600 {
         background-color: #4B5563;

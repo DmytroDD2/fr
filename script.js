@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     loadContent('report/report.html');
-    // loadContent('daily/daily.html');
     // loadContent('home/home.html');
     // loadContent('donate/donate.html');
     setActiveButtonDefault();

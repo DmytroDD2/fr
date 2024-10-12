@@ -8,37 +8,129 @@
     
 }
 
-body.body-class {
-    font-size: 15px;
-    color: #333; /* Changed text color to dark gray */
-    margin: 50px;
-    background-color: aliceblue;
-    padding: 0;
+.cont-of-don{
+    
+    /* background-color: aliceblue; */
+    padding: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 10vh;
+    height: 65vh;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: -30px;
     
 }
 
-
-h2 {
-    position: absolute;
-    top: 220px;
-    left: 20px;
-    font-size: 10pt;
-    margin-bottom: 0;
+.container-rep {
+    min-width: 90vh;
+    margin-top: 30px;
+    
 }
 
 .history-cont{
     background-color: #444;
     min-width: 90vh;
     min-height: 40vh;
-    border-radius: 3%;
-    position: absolute;
-    top: 40vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-radius: 1%;
+    overflow-y: auto;
+    /* для всіх браузерів */
+    scrollbar-width: thin; /* або narrow, або thin */
+    scrollbar-color: #444 #666; /* колір смужки прокрутки */
+    /* для WebKit */
+    ::-webkit-scrollbar {
+        width: 5px; /* ширина смужки прокрутки */
+        height: 5px; /* висота смужки прокрутки */
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #666; /* колір смужки прокрутки */
+        border-radius: 5px; /* радіус смужки прокрутки */
+    }
 }
+
+.data-history {
+    margin-bottom: 10em; /* Increase distance between rows */
+    text-align: center; /* Center the content */
+    margin-top: 15px;
+    
+
+}
+
+.empty {
+    margin-right: 13px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.underlined {
+    
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    margin-left: 20px;
+    min-width: 93%; /* Мінімальна ширина для елемента */
+    height: 30px; /* Висота рядка */
+    
+
+}
+
+/* Підкреслення для порожнього рядка */
+.underlined::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Підкреслення внизу елемента */
+    left: 0;
+    width: 100%;
+    height: 4px; /* Товщина підкреслення */
+    background-color: #9CA3AF; /* Колір підкреслення */
+}
+
+
+
+.hist-titl1{
+    position: absolute;
+    margin-top: -16px;
+
+    font-size: 10pt;
+    
+    
+}
+
+.hist-titl2{
+    margin-top: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.task {
+
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* use flexbox to align elements */
+    justify-content: space-between; /* align elements to opposite sides */
+    align-items: center; /* center elements vertically */
+    position: relative;
+    
+}
+
+.arrow {
+    
+    position: absolute;
+    right: 30px; /* push the arrow to the right side */
+    transform: rotate(270deg) scale(1.6) ;
+}
+
+.text{
+    margin-left: 15px;
+}
+
+
+.modal{display: none;}

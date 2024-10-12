@@ -17,6 +17,9 @@
   align-items: center;
 }
 
+.modal{
+  display: none;
+}
 .modal-content {
     background-color: white;
     padding: 20px;
@@ -28,6 +31,8 @@
     position: relative;
    /* Вищий за фоновий елемент модального вікна */
 }
+
+
 
 .bottom-title-daily {
   margin: 0;
@@ -48,16 +53,14 @@
 .title-daily{
   flex: 1;
   text-align: center;
-  /* margin-left: 168px; */
+  margin-left: 20px;
 }
-
-
 
 
  
   /* Modal Content styles */
   .modal-content-daily {
-   
+
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 100%; /* Could be more or less, depending on screen size */
@@ -116,8 +119,6 @@
 
 
 
-
-
   @media (max-width: 480px) {
     .modal {
       
@@ -135,13 +136,7 @@
   }
    
 
-    .modal-content{
-        
-        
-        
-      
-        
-    }
+  
   }
   
   /* Adjust styles for tablets */
@@ -154,11 +149,5 @@
    }
   
 
-   .modal-content{
-       
-       
-       
-     
-       
-   }
+  
   }

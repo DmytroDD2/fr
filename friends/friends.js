@@ -54,7 +54,7 @@ function getURLParams() {
 function populateData() {
     const params = getURLParams();
     
-    const container = document.getElementById('data-container');
+    const container = document.getElementById('data-container-content');
     
     // Змінні для лічильників рівнів
     let levelIndex = 1;
@@ -68,7 +68,7 @@ function populateData() {
         
         // Створюємо HTML-елементи для поточного рівня
         const row = document.createElement('div');
-         row.classList.add('data-container'); // Додаємо клас для підкреслення
+         row.classList.add('data-container-content', 'underlined-fr'); // Додаємо клас для підкреслення
         row.innerHTML = `
             <div>
                 <span id="level">${level}</span> 
