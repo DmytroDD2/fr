@@ -64,7 +64,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #444; /* Фон для завдань */
-    padding: 10px;
+   
     border-radius: 5%;
     width: 85vh;
 }
