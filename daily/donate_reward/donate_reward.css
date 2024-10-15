@@ -6,9 +6,9 @@
       height: 100%;
       max-width: 500px;
       text-align: center;
-      position: relative;
-      
+      position: relative;    
   }
+  
 .title-daily:before {
     content: "Donate reward";
   }
@@ -24,7 +24,6 @@
     padding: 10px; /* Можеш додати padding для внутрішніх відступів */
     text-align: center; /* Вирівнюємо текст по центру, якщо потрібно */
 
-
   }
 
 
@@ -38,16 +37,14 @@
     border-radius: 2%;
     padding: 10px;
     margin-bottom: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
     font-size: 14pt; /* Вирівняно розмір шрифту */
     height: 40px; /* Додаємо мінімальну висоту, щоб уникнути стиснення */
-    cursor: pointer; /* Додаємо курсор для індикації можливості взаємодії */
-    
-
-}
+    cursor: pointer; /* Додаємо курсор для індикації можливості взаємодії */  
+    display: flex;
+    justify-content: center; /* Горизонтальне вирівнювання по центру */
+    align-items: center; /* Вертикальне вирівнювання по центру */
+    text-align: center; /* Вирівнювання тексту по центру */
+  }
 
 
 
@@ -78,6 +75,9 @@
   padding: 10px; /* Менший відступ всередині елементів */
   height: 15px; /* Зменшення висоти елементів */
   margin-bottom: 35px;
+  display: flex;
+  margin-left: 25px;
+  
 }
 
 .task-reward span {

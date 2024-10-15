@@ -9,7 +9,6 @@
 }
 
 .cont-of-don{
-    
     padding: 3vh;
     display: flex;
     align-items: center;
@@ -51,7 +50,6 @@
 }
 
 .data-history {
-    margin-bottom: 10em; /* Increase distance between rows */
     text-align: center; /* Center the content */
     margin-top: 15px;
     
@@ -83,7 +81,7 @@
     bottom: 0; /* Підкреслення внизу елемента */
     left: 0;
     width: 100%;
-    height: 4px; /* Товщина підкреслення */
+    height: 1px; /* Товщина підкреслення */
     background-color: #9CA3AF; /* Колір підкреслення */
 }
 
@@ -181,5 +179,8 @@
     
         transform: rotate(270deg) scale(1.1) ;
     }
-
+    
+    .underlined{
+        height: 15px;
+    }
   }

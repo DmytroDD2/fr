@@ -283,7 +283,7 @@ button.bg-gray-600 {
 
 .close-button-daily {
     margin-bottom: 15px;
-    margin-right: -15px;
+    margin-right: 5px;
   }
 
 
@@ -464,6 +464,10 @@ button.bg-gray-600 {
     #claimButton{
         height: 35px;
     }
+    .close-button-daily {
+        margin-bottom: 15px;
+        margin-right: -8px;
+      }
    
    
   }

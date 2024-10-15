@@ -98,7 +98,6 @@ body {
 
 
 @media (max-width: 480px) {
-    
     body {
         margin: 10px; /* Зменшення загальних відступів */
     }
@@ -143,7 +142,7 @@ body {
 
       }
       .close-button-daily {
-        margin-right: 7px;
+        margin-right: -8px;
       }
    
 
