@@ -11,7 +11,7 @@
   transform: translate(-50%, 0); /* Adjust the position to center the modal horizontally */
   width: 100%;
   height: 100%;
-  background-image: url('/Background-VIC.svg');
+  background-image: url('Background-VIC.svg');
   background-size: cover;
   display: flex;
   justify-content: center;
