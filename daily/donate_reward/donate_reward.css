@@ -32,9 +32,10 @@
   
 
 .task-reward  {
-    margin-top: 5px;
+  margin: auto;
+    margin-top: 50px;
     background-color: #888;
-    border-radius: 2%;
+    border-radius: 3%;
     padding: 10px;
     margin-bottom: 60px;
     font-size: 14pt; /* Вирівняно розмір шрифту */
@@ -75,8 +76,8 @@
   padding: 10px; /* Менший відступ всередині елементів */
   height: 15px; /* Зменшення висоти елементів */
   margin-bottom: 35px;
-  display: flex;
-  margin-left: 25px;
+  height: 20px;
+  
   
 }
 

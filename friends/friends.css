@@ -276,15 +276,15 @@ button.bg-gray-600 {
     
 }
 
-.bottom-title-daily {
+/* .bottom-title-daily {
     
     margin-top: -134px;
-  }
+  } */
 
-.close-button-daily {
+/* .close-button-daily {
     margin-bottom: 15px;
     margin-right: 5px;
-  }
+  }  */
 
 
 
@@ -316,8 +316,7 @@ button.bg-gray-600 {
     top: 90px; /* set the bottom property to 0 */
     left: 50%; /* center the container horizontally */
     transform: translateX(-50%); /* center the container horizontally */
-    max-width: 80%; /* set the maximum width to 50% */
-    max-height: 21.5rem; /* set the maximum height to 21.5rem */
+    width: 40lvh; /* set the maximum width to 50% */
     margin: auto; /* center the container horizontally */
     border-radius: 10px; /* add a border radius */
     padding: 1rem; /* add some padding */
@@ -328,7 +327,7 @@ button.bg-gray-600 {
     width: 100%; /* set the image width to 100% of the container */
     height: 100%; /* set the image height to 100% of the container */
     object-fit: cover; /* resize the image to fit the container */
-    border-radius: 10px; /* add a border radius to the image */
+    border-radius: 2%; /* add a border radius to the image */
 }
 
 .buttons {
@@ -342,7 +341,7 @@ button.bg-gray-600 {
 
 
 
-.button, .button-cop {
+.buttonn, .button-cop {
     width: 200px;
     padding: 15px;
     margin: 20px;
@@ -423,8 +422,8 @@ button.bg-gray-600 {
 
     .line-st::after {
         bottom: px; /* Лінія по нижньому краю */
-        margin-left: 105px; /* Лінія знаходиться по середині */
-        width: 293px; /* Задає ширину лінії */
+        margin-left: 112px; /* Лінія знаходиться по середині */
+        width: 308px; /* Задає ширину лінії */
         height: 2px; /* Товщина лінії */
    
     }
@@ -435,10 +434,7 @@ button.bg-gray-600 {
     .pr-ref{
         margin-top: -21px;
     }
-    .bottom-title-daily {
-    
-        margin-top: -30px;
-      }
+  
  
 
     div.bg-gray {
@@ -451,25 +447,31 @@ button.bg-gray-600 {
     }
     
     .image1{
-        width: 23px;
-        height: 23px;
+        width: 24px;
+        height: 24px;
         margin-bottom: 8px; 
         margin-right: -15px;
     }
     
     .flex{
-        margin-left: 8px;
+        margin-left: 13px;
     }
     
     #claimButton{
         height: 35px;
     }
-    .close-button-daily {
-        margin-bottom: 15px;
-        margin-right: -8px;
-      }
-   
-   
+    .qr-code{
+        top: 60px;
+        height: 300px;
+        width: 300px;
+    }
+    .buttons{
+        bottom: 60px;
+    }
+    .buttonn, .button-cop {
+        margin-top: 10px;
+        height: 17px;
+    }
   }
   
   /* Adjust styles for tablets */

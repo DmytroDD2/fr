@@ -60,6 +60,12 @@ body {
     cursor: pointer; /* Додаємо курсор для індикації можливості взаємодії */
 }
 
+.task-right{
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+}
+
 .task {
     display: flex;
     align-items: center;
@@ -75,7 +81,7 @@ body {
     color: #ffd700; /* Додаємо кольорову іконку */
 }
 
-.task span {
+.task span , .task-right span{
     flex-grow: 1;
     font-size: 12pt; /* Зменшуємо трохи розмір шрифту для кращого вигляду */
 }
@@ -110,14 +116,14 @@ body {
         width: 270px; 
         font-size: 12pt; /* Зменшення розміру шрифту */
         padding: 10px; /* Менший відступ всередині елементів */
-        height: 15px; /* Зменшення висоти елементів */
+        height: 20px; /* Зменшення висоти елементів */
     }
     .reward{
         padding: 100px;
     }
 
     .section-title1, .section-title {
-        font-size: 10pt; /* Зменшення розміру шрифту для заголовків */
+        font-size: 11pt; /* Зменшення розміру шрифту для заголовків */
     }
 
     .img_daily {
@@ -136,7 +142,7 @@ body {
     .modal{
         top: 55px;
     }
-    .bottom-title-daily {
+    /* .bottom-title-daily {
         left: 5px;
         margin-top: -70px;
 
@@ -144,6 +150,6 @@ body {
       .close-button-daily {
         margin-right: -8px;
       }
-   
+    */
 
 }
