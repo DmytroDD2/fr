@@ -179,7 +179,7 @@ button {
  
 /* Список друзів */
 div.bg-gray-600 {
-    background-color: #4D4D4D;
+    
     padding: 16px;
     border-radius: 1%;
     display: flex;
@@ -405,7 +405,7 @@ button.bg-gray-600 {
   
 
     div.bg-gray-600 {
-        background-color: #4B5563;
+      
         padding: 16px;
         border-radius: 1%;
         display: flex;
