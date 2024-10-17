@@ -113,6 +113,11 @@
 
 
 @media (max-width: 480px) {
+  .donate-conteainer, .experience-container{
+    width: 95%; /* Фіксована ширина */
+    box-sizing: border-box;
+  
+  }
   .donate-conteainer{
     bottom: 149px;
   }

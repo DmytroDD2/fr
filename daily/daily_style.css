@@ -28,7 +28,7 @@ body {
     margin: 1px;
     padding: 10px;
     max-height: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь для стилю */
+
 }
 .text{
     margin-left: 2px;

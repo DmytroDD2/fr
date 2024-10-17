@@ -102,10 +102,18 @@ body {
         height: 50px; */
         /* bottom: 7vh */
         bottom: 15px;
+       
         
     }
-    .nav-item {
+    .nav-item {.nav-item {
         
+        /* width: 19.35%; */
+        /* height: 110%; */
+        
+        height: 53px;
+        width: 75px;
+        overflow: hidden;
+    }
         /* width: 19.35%; */
         /* height: 110%; */
         
