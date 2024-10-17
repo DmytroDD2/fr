@@ -22,13 +22,10 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     min-height: 100vh;
-    flex-direction: column;
-    
-    justify-content: flex-start;
-    
-    
+   
+    flex-direction: column;    
 }
 
 .claim-container{
@@ -52,10 +49,15 @@ body {
 .image1{
     width: 40px;
     height: 40px;
-    margin-top: -15px; 
-    margin-right: -15px;
-}
 
+
+}
+.felx1{
+    
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
 
 
 .hist-titl{
@@ -110,6 +112,7 @@ button {
     position: relative;
     height: 200px; /* Максимальна висота контейнера */
     width: 400px;
+    
 
        
 }
@@ -361,6 +364,10 @@ button.bg-gray-600 {
 
  /* Adjust styles for mobile devices */
  @media (max-width: 480px) {
+    body{
+        width: 360px;
+        align-items:center;
+    }
     .data-container{
         top: -8px;
         padding: 0px;
@@ -378,6 +385,11 @@ button.bg-gray-600 {
         height: 150px; /* Максимальна висота контейнера */
         width: 310px;
         padding-left: 20px;
+        position: relative;
+        margin: 50px;
+    
+        
+        
     }
 
 
@@ -416,9 +428,9 @@ button.bg-gray-600 {
              
     }
 
-    .line-st{
-        gap: 35px;
-    }
+    /* .line-st{
+        gap: 20px;
+    } */
 
     .line-st::after {
         bottom: px; /* Лінія по нижньому краю */
@@ -449,13 +461,14 @@ button.bg-gray-600 {
     .image1{
         width: 24px;
         height: 24px;
-        margin-bottom: 8px; 
-        margin-right: -15px;
+       
+        margin-right: 5px;
     }
     
-    .flex{
+    /* .flex{
         margin-left: 13px;
-    }
+    } */
+   
     
     #claimButton{
         height: 35px;
